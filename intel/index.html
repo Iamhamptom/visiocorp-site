@@ -5,6 +5,13 @@
 <title>Visiocorp Intel — Visiocorp</title>
 <meta name="description" content="Visiocorp Intel — written market and sector briefs, the underlying data sets, and bespoke research commissioned to your brief. Digital delivery, 3 to 10 business days.">
 <link rel="canonical" href="https://visiocorp.co/intel/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:site_name" content="Visiocorp">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Visiocorp Intel — Visiocorp">
+<meta property="og:description" content="Visiocorp Intel — written market and sector briefs, the underlying data sets, and bespoke research commissioned to your brief. Digital delivery, 3 to 10 business days.">
+<meta property="og:url" content="https://visiocorp.co/intel/">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -70,6 +77,9 @@ padding:13px 20px;color:var(--fg);font-family:inherit;font-size:15px}
 form.sub-form input:focus{outline:none;border-color:var(--acc)}
 form.sub-form button{padding:13px 26px;border-radius:999px;border:1px solid var(--fg);background:var(--fg);
 color:var(--bg);font-family:inherit;font-size:15px;font-weight:600;cursor:pointer}
+.nl{border:1px solid var(--line);border-radius:12px;padding:30px;margin:78px 0 0;background:var(--card)}
+.nl .k{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc)}
+.nl h2{margin:6px 0 10px!important;font-size:22px}
 footer.site{border-top:1px solid var(--line);margin-top:86px;padding:34px 0 0;color:var(--mut);
 font-size:13px;line-height:1.8}
 footer.site a{color:var(--mut)}
@@ -156,41 +166,24 @@ padding:4px 12px;border-radius:999px}
   <p><a class="btn ghost" href="mailto:david@visiocorp.co?subject=Visiocorp%20Intel%20%E2%80%94%20enquiry">Enquire about a larger engagement</a></p>
 
   <div class=eyebrow>Free to join</div>
-  <section id=notes>
-  <style>.sub-form .hint{flex:1 1 100%;font-size:13px;color:var(--mut);margin:4px 0 0}</style>
-  <h2>The notes from the desk</h2>
-  <p>Free to join. It is the written market and industry notes we keep as we work — what we
-  are reading in the numbers, what moved, and what we think it means. No charge, and you can
-  leave at any time by replying <strong>unsubscribe</strong> to any note.</p>
-  <form class=sub-form action="mailto:david@visiocorp.co" method="post" enctype="text/plain"
-        id=notes-form>
-    <input type=hidden name=subject value="Visiocorp Intel notes — subscribe">
-    <input type=email name=email id=notes-email required placeholder="you@company.com"
-           aria-label="Your email address">
-    <button type=submit>Join the notes</button>
-    <p class=hint>This opens your own email app with the message ready — send it and you are on
-    the list. Or write to <a href="mailto:david@visiocorp.co?subject=Visiocorp%20Intel%20notes%20%E2%80%94%20subscribe">david@visiocorp.co</a>
-    with the word <strong>subscribe</strong>.</p>
-  </form>
-  <script>
-  window.notesMailto=function(v){
-    return 'mailto:david@visiocorp.co?subject=Visiocorp%20Intel%20notes%20%E2%80%94%20subscribe'
-      +'&body='+encodeURIComponent('Please add '+v+' to the Visiocorp Intel notes.');
-  };
-  (function(){
-    var f=document.getElementById('notes-form');
-    if(!f) return;
-    f.addEventListener('submit',function(e){
-      var el=document.getElementById('notes-email');
-      var v=el?el.value:'';
-      if(!v) return;                       // let the browser's own validation speak
-      e.preventDefault();                  // JS path: a pre-filled draft
-      window.location.href=window.notesMailto(v);
-    });
-  })();
-  </script>
-  </section>
 
+
+  
+  <section class=nl>
+    <div class=k>The notes</div>
+    <h2 style="margin-top:6px">Market and industry notes from the desk</h2>
+    <p class=small style="max-width:56ch">Written notes on the markets and sectors we work in, free to join.
+    No fixed schedule &mdash; it goes out when there is something worth sending.</p>
+    <form class=sub-form onsubmit="var a=this.email.value.trim();if(!a)return false;
+      window.location.href='mailto:david@visiocorp.co?subject='+encodeURIComponent('Subscribe — the notes')
+      +'&amp;body='+encodeURIComponent('Please add '+a+' to the notes list.');return false;">
+      <input type=email name=email required placeholder="Your email address" aria-label="Your email address">
+      <button type=submit>Join the notes</button>
+    </form>
+    <p class=small style="margin-top:12px">Opens a pre-addressed email &mdash; or write to
+    <a href="mailto:david@visiocorp.co?subject=Subscribe%20%E2%80%94%20the%20notes">david@visiocorp.co</a>.
+    Leave any time by replying &ldquo;stop&rdquo;. We never sell or share your address.</p>
+  </section>
   <footer class=site>
     Visiocorp is a trading name of <strong>Touchline Agency (Pty) Ltd</strong>, registration number <strong>2025/335979/07</strong>, of 946 Morudi Street, Tlhabane, Rustenburg, North West 0309, South Africa. Not registered for VAT.<br>
     +27 71 548 6226 &middot; <a href="mailto:david@visiocorp.co">david@visiocorp.co</a><br>

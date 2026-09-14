@@ -5,6 +5,7 @@
 <title>Refund and Cancellation Policy — Visiocorp</title>
 <meta name="description" content="When you can cancel, what you get back, and how long it takes.">
 <link rel="canonical" href="https://visiocorp.co/refund-policy/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta name="robots" content="index,follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,6 +49,13 @@ td.r,th.r{text-align:right;padding-right:0}
 .toc ol{margin:0;padding-left:20px;columns:2;column-gap:28px}
 .toc a{color:#cfcfca;text-decoration:none;font-size:14px}
 .toc a:hover{color:#fff;text-decoration:underline}
+.nl{border:1px solid var(--line);border-radius:12px;padding:30px;margin:78px 0 0;background:#0b0b0b}
+.nl .k{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc)}
+.nl h2{margin:6px 0 10px!important;font-size:22px}
+form.sub-form{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 0}
+form.sub-form input{flex:1 1 240px;background:#0d0d0d;border:1px solid var(--line);border-radius:999px;padding:13px 20px;color:var(--fg);font-family:inherit;font-size:15px}
+form.sub-form input:focus{outline:none;border-color:var(--acc)}
+form.sub-form button{padding:13px 26px;border-radius:999px;border:1px solid var(--fg);background:var(--fg);color:var(--bg);font-family:inherit;font-size:15px;font-weight:600;cursor:pointer}
 footer.site{border-top:1px solid var(--line);margin-top:72px;padding:32px 0 0;color:var(--mut);font-size:13px;line-height:1.7}
 footer.site a{color:var(--mut)}
 @media(max-width:640px){.toc ol{columns:1}}
@@ -121,6 +129,22 @@ footer.site a{color:var(--mut)}
         <div class=num>Contact for all cancellations, refunds and complaints</div>
         <p>Touchline Agency (Pty) Ltd<br>Registration number 2025/335979/07<br>946 Morudi Street, Tlhabane, Rustenburg, North West 0309, South Africa<br>+27 71 548 6226<br>david@visiocorp.co<br><span class=small>Version 1.0 &middot; effective 14 September 2026</span></p>
       </div>
+  
+  <section class=nl>
+    <div class=k>The notes</div>
+    <h2 style="margin-top:6px">Market and industry notes from the desk</h2>
+    <p class=small style="max-width:56ch">Written notes on the markets and sectors we work in, free to join.
+    No fixed schedule &mdash; it goes out when there is something worth sending.</p>
+    <form class=sub-form onsubmit="var a=this.email.value.trim();if(!a)return false;
+      window.location.href='mailto:david@visiocorp.co?subject='+encodeURIComponent('Subscribe — the notes')
+      +'&amp;body='+encodeURIComponent('Please add '+a+' to the notes list.');return false;">
+      <input type=email name=email required placeholder="Your email address" aria-label="Your email address">
+      <button type=submit>Join the notes</button>
+    </form>
+    <p class=small style="margin-top:12px">Opens a pre-addressed email &mdash; or write to
+    <a href="mailto:david@visiocorp.co?subject=Subscribe%20%E2%80%94%20the%20notes">david@visiocorp.co</a>.
+    Leave any time by replying &ldquo;stop&rdquo;. We never sell or share your address.</p>
+  </section>
   <footer class=site>
     Touchline Agency (Pty) Ltd, trading as Visiocorp &middot; registration number 2025/335979/07<br>
     946 Morudi Street, Tlhabane, Rustenburg, North West 0309, South Africa &middot; +27 71 548 6226<br>

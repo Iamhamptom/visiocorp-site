@@ -5,6 +5,13 @@
 <title>What we do — Visiocorp</title>
 <meta name="description" content="The Touchline Agency service menu: music products and services, talent management and brand campaigns, release campaign services, and where to find our data and research.">
 <link rel="canonical" href="https://visiocorp.co/offers/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:site_name" content="Visiocorp">
+<meta property="og:type" content="website">
+<meta property="og:title" content="What we do — Visiocorp">
+<meta property="og:description" content="The Touchline Agency service menu: music products and services, talent management and brand campaigns, release campaign services, and where to find our data and research.">
+<meta property="og:url" content="https://visiocorp.co/offers/">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -70,6 +77,9 @@ padding:13px 20px;color:var(--fg);font-family:inherit;font-size:15px}
 form.sub-form input:focus{outline:none;border-color:var(--acc)}
 form.sub-form button{padding:13px 26px;border-radius:999px;border:1px solid var(--fg);background:var(--fg);
 color:var(--bg);font-family:inherit;font-size:15px;font-weight:600;cursor:pointer}
+.nl{border:1px solid var(--line);border-radius:12px;padding:30px;margin:78px 0 0;background:var(--card)}
+.nl .k{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc)}
+.nl h2{margin:6px 0 10px!important;font-size:22px}
 footer.site{border-top:1px solid var(--line);margin-top:86px;padding:34px 0 0;color:var(--mut);
 font-size:13px;line-height:1.8}
 footer.site a{color:var(--mut)}
@@ -207,6 +217,22 @@ footer.site .pay{margin:14px 0 0;font-size:12px}
   <p><a class="btn gold" href="mailto:david@visiocorp.co?subject=Enquiry%20%E2%80%94%20Touchline%20Agency">Email
   david@visiocorp.co</a></p>
 
+  
+  <section class=nl>
+    <div class=k>The notes</div>
+    <h2 style="margin-top:6px">Market and industry notes from the desk</h2>
+    <p class=small style="max-width:56ch">Written notes on the markets and sectors we work in, free to join.
+    No fixed schedule &mdash; it goes out when there is something worth sending.</p>
+    <form class=sub-form onsubmit="var a=this.email.value.trim();if(!a)return false;
+      window.location.href='mailto:david@visiocorp.co?subject='+encodeURIComponent('Subscribe — the notes')
+      +'&amp;body='+encodeURIComponent('Please add '+a+' to the notes list.');return false;">
+      <input type=email name=email required placeholder="Your email address" aria-label="Your email address">
+      <button type=submit>Join the notes</button>
+    </form>
+    <p class=small style="margin-top:12px">Opens a pre-addressed email &mdash; or write to
+    <a href="mailto:david@visiocorp.co?subject=Subscribe%20%E2%80%94%20the%20notes">david@visiocorp.co</a>.
+    Leave any time by replying &ldquo;stop&rdquo;. We never sell or share your address.</p>
+  </section>
   <footer class=site>
     Visiocorp is a trading name of <strong>Touchline Agency (Pty) Ltd</strong>, registration number <strong>2025/335979/07</strong>, of 946 Morudi Street, Tlhabane, Rustenburg, North West 0309, South Africa. Not registered for VAT.<br>
     +27 71 548 6226 &middot; <a href="mailto:david@visiocorp.co">david@visiocorp.co</a><br>

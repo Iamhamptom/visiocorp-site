@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Seat — Visiocorp</title>
+<meta name="description" content="The Seat is Touchline Agency's six-month creator programme: 10-20% of what you sell, paid weekly, with leads, scripts, training, a platform and brand deals pitched for you.">
+<link rel="canonical" href="https://visiocorp.co/the-seat/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050505;--fg:#f2f2f0;--mut:#8f8f8a;--line:#232323;--acc:#c9a227;--card:#0b0b0b;
+--sans:Inter,'Helvetica Neue',Helvetica,Arial,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;
+line-height:1.7;letter-spacing:.01em;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px 96px}
+.wrap.wide{max-width:1080px}
+header.top{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(5,5,5,.93);
+backdrop-filter:blur(10px);z-index:20}
+header.top .bar{max-width:1080px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;
+justify-content:space-between;gap:20px;flex-wrap:wrap}
+.brand{font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:13px;text-decoration:none;white-space:nowrap}
+nav.main{display:flex;gap:22px;flex-wrap:wrap}
+nav.main a{font-size:13.5px;color:var(--mut);text-decoration:none}
+nav.main a:hover,nav.main a[aria-current]{color:var(--fg)}
+h1{font-size:clamp(32px,6vw,52px);line-height:1.07;font-weight:600;letter-spacing:-.025em;margin:60px 0 16px}
+.sub{color:var(--mut);font-size:clamp(17px,2.2vw,20px);line-height:1.55;margin:0 0 34px;max-width:60ch}
+h2{font-size:clamp(21px,3vw,27px);font-weight:600;letter-spacing:-.015em;margin:56px 0 12px;scroll-margin-top:80px}
+h3{font-size:17px;font-weight:600;margin:28px 0 6px}
+p{margin:0 0 16px;color:#dcdcd8}
+ul,ol{margin:0 0 16px;padding-left:22px;color:#dcdcd8}
+li{margin:0 0 9px}
+strong,b{color:var(--fg);font-weight:600}
+.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
+border-top:1px solid var(--line);padding-top:14px;margin:64px 0 14px}
+.eyebrow+h2{margin-top:0}
+.small{font-size:14px;color:var(--mut);line-height:1.6}
+.grid{display:grid;gap:18px;margin:26px 0 0}
+.grid.c2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.grid.c3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{border:1px solid var(--line);border-radius:12px;padding:26px;background:var(--card);
+display:flex;flex-direction:column}
+.card.feat{border-color:var(--acc)}
+.card .k{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);margin-bottom:12px}
+.card h3{margin:0 0 6px;font-size:19px}
+.card p{font-size:15px;line-height:1.6}
+.price{font-size:38px;line-height:1;font-weight:600;letter-spacing:-.03em;margin:6px 0 2px}
+.price span{font-size:13px;font-weight:400;color:var(--mut);letter-spacing:.06em;margin-left:6px}
+.zar{font-size:13px;color:var(--mut);margin:0 0 16px}
+.btn{display:inline-block;padding:13px 26px;border-radius:999px;text-decoration:none;font-size:15px;
+font-weight:600;border:1px solid var(--fg);color:var(--bg);background:var(--fg);transition:.15s;margin-top:auto}
+.btn:hover{opacity:.86}
+.btn.ghost{background:transparent;color:var(--fg)}
+.btn.gold{background:var(--acc);border-color:var(--acc);color:#161200}
+.btn.wide{display:block;text-align:center}
+table{width:100%;border-collapse:collapse;margin:22px 0;font-size:15px}
+th{text-align:left;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);
+border-bottom:1px solid var(--line);padding:0 14px 10px 0;font-weight:600}
+td{border-bottom:1px solid var(--line);padding:13px 14px 13px 0;vertical-align:top;color:#dcdcd8}
+td.r,th.r{text-align:right;padding-right:0;white-space:nowrap}
+.note{border:1px solid var(--line);border-left:2px solid var(--acc);border-radius:0 10px 10px 0;
+padding:18px 22px;margin:28px 0;background:#0a0a0a}
+.note p:last-child{margin:0}
+form.sub-form{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 0}
+form.sub-form input{flex:1 1 240px;background:#0d0d0d;border:1px solid var(--line);border-radius:999px;
+padding:13px 20px;color:var(--fg);font-family:inherit;font-size:15px}
+form.sub-form input:focus{outline:none;border-color:var(--acc)}
+form.sub-form button{padding:13px 26px;border-radius:999px;border:1px solid var(--fg);background:var(--fg);
+color:var(--bg);font-family:inherit;font-size:15px;font-weight:600;cursor:pointer}
+footer.site{border-top:1px solid var(--line);margin-top:86px;padding:34px 0 0;color:var(--mut);
+font-size:13px;line-height:1.8}
+footer.site a{color:var(--mut)}
+footer.site .pay{margin:14px 0 0;font-size:12px}
+@media(max-width:600px){h1{margin-top:40px}.card{padding:22px}}
+@media print{body{background:#fff;color:#111}header.top{display:none}p,td,li{color:#222}}
+</style>
+<style>
+.eyebrow{scroll-margin-top:96px}
+.grid + p,.grid + .note{margin-top:26px}
+@media(min-width:700px){.grid.trio{grid-template-columns:repeat(3,1fr)}}
+.ladder td:first-child{white-space:nowrap}
+.ladder td.r{width:1%;font-weight:600}
+@media(max-width:640px){
+  .ladder thead{display:none}
+  .ladder tr{display:block;padding:20px 0;border-bottom:1px solid var(--line)}
+  .ladder tr:last-child{border-bottom:0}
+  .ladder td{display:block;width:auto;border:0;padding:0;white-space:normal}
+  .ladder td[data-l]::before{content:attr(data-l);display:block;font-size:11px;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin:14px 0 4px}
+  .ladder td.r{width:auto;text-align:left;color:var(--acc);margin-top:14px}
+}
+</style>
+</head><body>
+<header class=top><div class=bar>
+  <a class=brand href="/">Visiocorp</a>
+  <nav class=main><a href="/offers/">Offers</a><a href="/intel/">Intel</a><a href="/the-seat/" aria-current=page>The Seat</a><a href="/tony-duardo/">Tony Duardo</a></nav>
+</div></header>
+<main class="wrap">
+  <h1>The Seat</h1>
+  <p class=sub>A six-month seat for a creator who wants to sell properly: our products, our leads, our script, brand work pitched for you &mdash; and your name, your audience and your account stay yours.</p>
+
+  <div class=note>
+    <p>You join us for <strong>six months</strong>. We put you on our products and pay you
+    <strong>10&ndash;20% of every sale you close</strong>. We pitch you for <strong>brand
+    work</strong> and take that pipeline off your hands. We use your account &mdash; only with your
+    approval, post by post &mdash; to build a customer base that belongs to the business, and we
+    train you to sell properly while we do it. You keep your name, your audience and your face. At
+    month six, both of us decide whether to go again.</p>
+  </div>
+
+  <div class=eyebrow>The term</div>
+  <h2>Six months, and it is short on purpose</h2>
+  <p>Six months is a trial in <strong>both</strong> directions. You are not signing your life away,
+  and we are not asking you to commit to something neither of us has tested yet. The dates are in
+  the contract, not left to how anyone feels at the time.</p>
+  <div class="grid c3 trio">
+    <div class=card><div class=k>Day 30</div><h3>First review</h3>
+      <p>What is working in your own words, what the numbers say, and what we change before it
+      becomes a habit.</p></div>
+    <div class=card><div class=k>Day 90</div><h3>Second review</h3>
+      <p>Your book, your collection rate and your account health, against the plan we built from
+      your page before you signed.</p></div>
+    <div class=card><div class=k>Month 6</div><h3>The decision</h3>
+      <p>Renewal is by agreement. Either side can decide not to go again, and that is a normal
+      outcome, not a failure.</p></div>
+  </div>
+
+  <div class=eyebrow>The money</div>
+  <h2>10&ndash;20% of what you sell, paid weekly</h2>
+  <p>Your commission is calculated on <strong>money actually collected</strong>, less a list of
+  direct costs that is <strong>closed and named in the contract</strong>. An open-ended
+  &ldquo;less costs&rdquo; clause turns into an argument every week, so we do not write one.</p>
+  <div class="grid c2">
+    <div class=card>
+      <div class=k>Deducted</div>
+      <h3>The direct cost of your sale</h3>
+      <p>Payment processing on that order, the courier leg for that order, refunds and chargebacks
+      on your sales, a discount you gave on that order, and a referral fee owed on that order.</p>
+    </div>
+    <div class=card>
+      <div class=k>Never deducted</div>
+      <h3>The cost of being a company</h3>
+      <p>Rent, utilities, salaries, equipment, marketing, software, the lead engine, management
+      time, training and admin. You carry the cost of <em>your</em> sale. We carry the cost of
+      being a company.</p>
+    </div>
+  </div>
+  <p class=small>Your rate is set in your agreement and moves up the ladder below. Nothing on this
+  page is an income promise: what you earn depends on what you sell and what is collected.</p>
+
+  <div class=eyebrow>From day one</div>
+  <h2>What you are handed the week you sign</h2>
+  <p>Not at 30 days, not once you have proved something. This is the seat itself.</p>
+  <div class="grid c2"><div class=card><div class=k>Product</div><h3>Something to sell</h3><p>Product lines with a live payment link you can send inside the conversation. You never have to build an offer, and you are never selling something you cannot deliver.</p></div><div class=card><div class=k>Pipeline</div><h3>Leads and a daily queue</h3><p>We generate the targets. The queue is prepped a day ahead &mdash; who, why today, and the message already written. You do not prospect cold from scratch.</p></div><div class=card><div class=k>Method</div><h3>The script</h3><p>Opener, objections, close. Guided every step, in your own words, so you are never improvising in front of a client.</p></div><div class=card><div class=k>Brands</div><h3>Pitched and negotiated for you</h3><p>We pitch you for brand work, run the outreach and negotiate the terms. You keep 100% of the relationships you bring yourself.</p></div><div class=card><div class=k>Training</div><h3>Structured, on a schedule</h3><p>Four weeks on the offer, on leads, on the operator model, and on our own product and field standard &mdash; then a 30-minute session every week with your calls reviewed.</p></div><div class=card><div class=k>Numbers</div><h3>Your audience, and your rate</h3><p>Your real audience read &mdash; who they are, where they are, which industries already sit in your comments &mdash; and the rate card that comes out of it. Nobody publishes host and appearance rates. We can hand you yours.</p></div><div class=card><div class=k>Platform</div><h3>A dashboard and a back end</h3><p>Sent, replied, booked, closed, collected and earnings to date, live. Behind it: your customer book, order status and delivery tracking, your invitations and RSVPs, your weekly report.</p></div><div class=card><div class=k>Pay</div><h3>Weekly, and a monthly 1:1</h3><p>Commission is paid weekly, not at month end. Once a month there is a call that is only about your numbers, what is blocking you and what you want next.</p></div></div>
+
+  <div class=eyebrow>The ladder</div>
+  <h2>Support is earned, and the gates are visible</h2>
+  <p>A photographer, designers and dedicated support are real money, so they unlock as you produce
+  rather than on the day you sign. You can see the whole ladder before you agree to the first
+  rung, and the commission band climbs with it &mdash; the rate is not picked, it is earned.</p>
+  <table class=ladder>
+    <thead><tr><th>Tier</th><th>Gate</th><th>What unlocks</th><th class=r>Rate</th></tr></thead>
+    <tbody><tr><td><strong>0 &middot; Signed</strong></td><td data-l="Gate"><span class=small>Day one</span></td><td data-l="What unlocks"><span class=small>Dashboard, back end, daily tasks, scripts, payment links, your full tech stack, weekly pay, the monthly call and the four-week training.</span></td><td class=r data-l="Rate">10%</td></tr><tr><td><strong>1 &middot; Producing</strong></td><td data-l="Gate"><span class=small>30 days &middot; closes on the board &middot; collection at or above 60% &middot; account clean</span></td><td data-l="What unlocks"><span class=small>Design support and branded assets for your page, event invitations to send, your own profile page and rate card.</span></td><td class=r data-l="Rate">10%</td></tr><tr><td><strong>2 &middot; Established</strong></td><td data-l="Gate"><span class=small>90 days &middot; a book of 40+ &middot; collection at or above 75% &middot; retention holding</span></td><td data-l="What unlocks"><span class=small>A professional shoot and a media kit &mdash; and we start actively pitching you to brands. Priority territory.</span></td><td class=r data-l="Rate">15%</td></tr><tr><td><strong>3 &middot; Senior</strong></td><td data-l="Gate"><span class=small>Three months at target &middot; collection at or above 85%</span></td><td data-l="What unlocks"><span class=small>Dedicated support assigned to you, input on the product itself, and a path to team lead or a city.</span></td><td class=r data-l="Rate">20%</td></tr></tbody>
+  </table>
+  <div class=note>
+    <p><strong>The gates are on money collected and on account health &mdash; never on gross
+    written.</strong> Someone who writes a large number and collects a fraction of it, while
+    getting blocked and reported, has not earned a shoot; they have created a problem. Deal-to-paid
+    is the headline gate at every tier, and block and complaint rates are a hard disqualifier at
+    any level.</p>
+  </div>
+
+  <div class=eyebrow>Your account</div>
+  <h2>Used, never taken</h2>
+  <ul>
+    <li><strong>You own the account. Always.</strong> The login stays yours and we never hold your
+    password.</li>
+    <li><strong>Approval post by post.</strong> Nothing goes out that you have not seen. We draft,
+    you approve, and <strong>you</strong> send &mdash; which is also the platform rule, because
+    automation is what gets accounts banned.</li>
+    <li><strong>A daily cap on outbound.</strong> Volume is capped and split across channels to
+    protect your account. It is your asset, not ours.</li>
+    <li><strong>We write, you voice.</strong> Every message in your own words, and never
+    pitch-first: who we are, thank them, their own words, and only then the offer.</li>
+    <li><strong>Customers acquired belong to the company.</strong> That is the trade, and we say it
+    plainly up front so it is never a surprise later.</li>
+    <li><strong>On exit your account is untouched</strong> and you keep every follower it earned.
+    Your media kit, your numbers, your content and your contacts are exported and handed over on
+    day one of leaving.</li>
+  </ul>
+
+  <div class=eyebrow>The paper</div>
+  <h2>What you will actually be signing</h2>
+  <ul><li><strong>A two-way NDA.</strong> You protect our lists, scripts, method, customer book and pricing. We protect your identity as a rep, your earnings and your personal information. It runs both ways in the same clause.</li><li><strong>Confidentiality, itemised.</strong> The confidential items are named one by one rather than gestured at, so neither side has to argue later about what was covered.</li><li><strong>A narrow restraint of trade.</strong> Six months, Gauteng, and same-service competitors only. You are exclusive to us as a seller in our categories &mdash; never as a person.</li><li><strong>Non-solicitation, both ways.</strong> You do not take clients or reps. We do not go after the brand relationships you brought with you.</li><li><strong>IP assignment.</strong> Work created inside the role belongs to the company. Your own content and creative stay yours.</li><li><strong>A POPIA undertaking.</strong> How customer data is handled, in line with the Protection of Personal Information Act.</li><li><strong>A code of conduct and a safety protocol.</strong> Buddy routes for door work, a live check-in and check-out, a named person to report to, and an unconditional right to leave any room &mdash; with no effect on your commission, ever.</li><li><strong>Clients contract to the company.</strong> Never to you personally. You are never the one carrying a client's contract or a client's risk.</li></ul>
+
+  <div class=eyebrow>Applying</div>
+  <h2>There is nothing to pay and nothing to buy</h2>
+  <p>The Seat is an application, not a product. Email us and include:</p>
+  <ol>
+    <li>Your <strong>handle</strong>.</li>
+    <li>Your <strong>city</strong>.</li>
+    <li>What you want to be <strong>known for</strong> &mdash; a sentence is enough.</li>
+    <li>Your <strong>Instagram Insights screenshots</strong>: the last 30 days of reach, and your
+    audience breakdown.</li>
+  </ol>
+  <p class=small>We read the page properly before anyone talks about a contract &mdash; what you
+  post, who engages, where they are &mdash; and you get that read back as a one-pager whether or
+  not we go further. We do not publish a roster, and we never disclose who we work with or what
+  they earn.</p>
+  <p><a class="btn gold" href="mailto:david@visiocorp.co?subject=The%20Seat%20%E2%80%94%20application">Apply by email</a></p>
+
+  <footer class=site>
+    Visiocorp is a trading name of <strong>Touchline Agency (Pty) Ltd</strong>, registration number <strong>2025/335979/07</strong>, of 946 Morudi Street, Tlhabane, Rustenburg, North West 0309, South Africa. Not registered for VAT.<br>
+    +27 71 548 6226 &middot; <a href="mailto:david@visiocorp.co">david@visiocorp.co</a><br>
+    <a href="/terms/">Terms and Conditions</a> &middot; <a href="/refund-policy/">Refund and Cancellation Policy</a> &middot; <a href="/privacy/">Privacy and POPIA</a> &middot; <a href="/delivery/">Delivery</a> &middot; <a href="/contact/">Contact</a>
+    <p class=pay>Card payments are processed by Yoco and Payfast over a secure connection.
+    We never see or store your card details. Prices quoted in US dollars are charged in South
+    African rand at the rate on the day. Page updated 14 September 2026.</p>
+  </footer>
+</main>
+</body></html>

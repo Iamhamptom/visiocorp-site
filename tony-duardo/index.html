@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tony Duardo — Visiocorp</title>
+<meta name="description" content="Tony Duardo — songwriter and producer. 38 released publishing credits including Uncle Waffles, TYLA, Davido, CIZA, Omah Lay, Elaine and Adekunle Gold.">
+<link rel="canonical" href="https://visiocorp.co/tony-duardo/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050505;--fg:#f2f2f0;--mut:#8f8f8a;--line:#232323;--acc:#c9a227;--card:#0b0b0b;
+--sans:Inter,'Helvetica Neue',Helvetica,Arial,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;
+line-height:1.7;letter-spacing:.01em;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px 96px}
+.wrap.wide{max-width:1080px}
+header.top{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(5,5,5,.93);
+backdrop-filter:blur(10px);z-index:20}
+header.top .bar{max-width:1080px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;
+justify-content:space-between;gap:20px;flex-wrap:wrap}
+.brand{font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:13px;text-decoration:none;white-space:nowrap}
+nav.main{display:flex;gap:22px;flex-wrap:wrap}
+nav.main a{font-size:13.5px;color:var(--mut);text-decoration:none}
+nav.main a:hover,nav.main a[aria-current]{color:var(--fg)}
+h1{font-size:clamp(32px,6vw,52px);line-height:1.07;font-weight:600;letter-spacing:-.025em;margin:60px 0 16px}
+.sub{color:var(--mut);font-size:clamp(17px,2.2vw,20px);line-height:1.55;margin:0 0 34px;max-width:60ch}
+h2{font-size:clamp(21px,3vw,27px);font-weight:600;letter-spacing:-.015em;margin:56px 0 12px;scroll-margin-top:80px}
+h3{font-size:17px;font-weight:600;margin:28px 0 6px}
+p{margin:0 0 16px;color:#dcdcd8}
+ul,ol{margin:0 0 16px;padding-left:22px;color:#dcdcd8}
+li{margin:0 0 9px}
+strong,b{color:var(--fg);font-weight:600}
+.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
+border-top:1px solid var(--line);padding-top:14px;margin:64px 0 14px}
+.eyebrow+h2{margin-top:0}
+.small{font-size:14px;color:var(--mut);line-height:1.6}
+.grid{display:grid;gap:18px;margin:26px 0 0}
+.grid.c2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.grid.c3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{border:1px solid var(--line);border-radius:12px;padding:26px;background:var(--card);
+display:flex;flex-direction:column}
+.card.feat{border-color:var(--acc)}
+.card .k{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);margin-bottom:12px}
+.card h3{margin:0 0 6px;font-size:19px}
+.card p{font-size:15px;line-height:1.6}
+.price{font-size:38px;line-height:1;font-weight:600;letter-spacing:-.03em;margin:6px 0 2px}
+.price span{font-size:13px;font-weight:400;color:var(--mut);letter-spacing:.06em;margin-left:6px}
+.zar{font-size:13px;color:var(--mut);margin:0 0 16px}
+.btn{display:inline-block;padding:13px 26px;border-radius:999px;text-decoration:none;font-size:15px;
+font-weight:600;border:1px solid var(--fg);color:var(--bg);background:var(--fg);transition:.15s;margin-top:auto}
+.btn:hover{opacity:.86}
+.btn.ghost{background:transparent;color:var(--fg)}
+.btn.gold{background:var(--acc);border-color:var(--acc);color:#161200}
+.btn.wide{display:block;text-align:center}
+table{width:100%;border-collapse:collapse;margin:22px 0;font-size:15px}
+th{text-align:left;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);
+border-bottom:1px solid var(--line);padding:0 14px 10px 0;font-weight:600}
+td{border-bottom:1px solid var(--line);padding:13px 14px 13px 0;vertical-align:top;color:#dcdcd8}
+td.r,th.r{text-align:right;padding-right:0;white-space:nowrap}
+.note{border:1px solid var(--line);border-left:2px solid var(--acc);border-radius:0 10px 10px 0;
+padding:18px 22px;margin:28px 0;background:#0a0a0a}
+.note p:last-child{margin:0}
+form.sub-form{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 0}
+form.sub-form input{flex:1 1 240px;background:#0d0d0d;border:1px solid var(--line);border-radius:999px;
+padding:13px 20px;color:var(--fg);font-family:inherit;font-size:15px}
+form.sub-form input:focus{outline:none;border-color:var(--acc)}
+form.sub-form button{padding:13px 26px;border-radius:999px;border:1px solid var(--fg);background:var(--fg);
+color:var(--bg);font-family:inherit;font-size:15px;font-weight:600;cursor:pointer}
+footer.site{border-top:1px solid var(--line);margin-top:86px;padding:34px 0 0;color:var(--mut);
+font-size:13px;line-height:1.8}
+footer.site a{color:var(--mut)}
+footer.site .pay{margin:14px 0 0;font-size:12px}
+@media(max-width:600px){h1{margin-top:40px}.card{padding:22px}}
+@media print{body{background:#fff;color:#111}header.top{display:none}p,td,li{color:#222}}
+</style>
+<style>
+.stats{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));margin:30px 0 0}
+.stat{border:1px solid var(--line);border-radius:12px;padding:20px 22px;background:var(--card)}
+.stat .n{font-size:34px;line-height:1;font-weight:600;letter-spacing:-.03em}
+.stat .l{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin-top:9px}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 0;padding:0;list-style:none}
+.chips li{border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:13.5px;
+color:#dcdcd8;background:var(--card);white-space:nowrap}
+.chips li.mq{border-color:var(--acc);color:var(--fg)}
+.chips li b{font-weight:600}
+.chips li i{font-style:normal;color:var(--mut);font-size:12px;margin-left:7px;letter-spacing:.06em}
+.chips li.mq i{color:var(--acc)}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:22px 0 0}
+.tablewrap table{min-width:430px;margin:0}
+.credits th.yr,.credits td.yr{text-align:right;padding-right:0;white-space:nowrap;width:1%}
+.credits td.art{color:var(--fg);white-space:nowrap;padding-right:20px}
+.credits tr.mq td.art{color:var(--acc)}
+.credits td.ttl{width:99%}
+.credits td.yr span.na{color:#55554f}
+.own{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);
+border:1px solid var(--acc);border-radius:999px;padding:2px 9px;margin-left:10px;white-space:nowrap}
+@media(max-width:620px){
+  /* Restack every row as its own block: artist, title, year. No sideways scrolling. */
+  .tablewrap table{min-width:0}
+  .credits thead{display:none}
+  .credits,.credits tbody,.credits tr,.credits td{display:block;width:auto}
+  .credits tr{border-bottom:1px solid var(--line);padding:15px 0}
+  .credits td{border:0;padding:0;white-space:normal}
+  .credits td.art{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--mut)}
+  .credits tr.mq td.art{color:var(--acc)}
+  .credits td.ttl{font-size:16.5px;color:var(--fg);margin:4px 0 0}
+  .credits td.yr{text-align:left;font-size:13.5px;color:var(--mut);margin:3px 0 0}
+  .own{display:inline-block;margin:4px 0 0 8px}
+  .stat .n{font-size:28px}
+}
+</style>
+</head><body>
+<header class=top><div class=bar>
+  <a class=brand href="/">Visiocorp</a>
+  <nav class=main><a href="/offers/">Offers</a><a href="/intel/">Intel</a><a href="/the-seat/">The Seat</a><a href="/tony-duardo/" aria-current=page>Tony Duardo</a></nav>
+</div></header>
+<main class="wrap wide">
+  <h1>Tony Duardo</h1>
+  <p class=sub>South African songwriter and producer. A catalogue of 38 released records behind artists in amapiano, afrobeats and afro-house.</p>
+
+  <div class=stats>
+    <div class=stat><div class=n>38</div><div class=l>Released records</div></div>
+    <div class=stat><div class=n>23</div><div class=l>Artists credited</div></div>
+    <div class=stat><div class=n>2021&ndash;2026</div><div class=l>Release years on record</div></div>
+  </div>
+
+  <h2 id=who>Who he is</h2>
+  <p>Tony Duardo is a South African songwriter and producer. His catalogue sits behind records
+  for some of the biggest names in amapiano, afrobeats and afro-house &mdash; Uncle Waffles, TYLA,
+  Davido, CIZA, Omah Lay, Elaine, Adekunle Gold, TxC and DJ Maphorisa among them.</p>
+  <p>The list below is the working record: 38 released records, each one held in the
+  Touchline catalogue with the publishing on it accounted for at 100%. It is the catalogue we
+  administer, not a highlight reel &mdash; every record we hold is on it.</p>
+
+  <p class=eyebrow>Artists on the list</p>
+  <ul class=chips><li class="mq"><b>Uncle Waffles</b><i>9</i></li><li class="mq"><b>CIZA</b><i>8</i></li><li class="mq"><b>TxC</b><i>4</i></li><li class=""><b>Marioo</b><i>3</i></li><li class=""><b>DJ Maphorisa</b><i>2</i></li><li class=""><b>Seekay</b><i>2</i></li><li class="mq"><b>TYLA</b><i>2</i></li><li class="mq"><b>Adekunle Gold</b></li><li class=""><b>Chley</b></li><li class="mq"><b>Davido</b></li><li class=""><b>DJ Ndiyo</b></li><li class=""><b>DJ Spinall</b></li><li class="mq"><b>Elaine</b></li><li class=""><b>Gazza</b></li><li class=""><b>Jux</b></li><li class=""><b>Keinemusik</b></li><li class=""><b>LeeMckrazy</b></li><li class=""><b>Malachi</b></li><li class=""><b>Mario</b></li><li class="mq"><b>Omah Lay</b></li><li class=""><b>Skyla Tyla</b></li><li class=""><b>Tony Duardo</b></li><li class=""><b>Tshepi</b></li></ul>
+  <p class=small>A number beside a name is how many records on this page that artist is credited
+  on. Names in gold are the ones most people will know first.</p>
+
+  <p class=eyebrow>The credits</p>
+  <h2 id=credits>38 released records</h2>
+  <p>Sorted most recent first. Where a release year is not recorded in the catalogue it is left
+  blank rather than filled in.</p>
+  <div class=tablewrap>
+    <table class=credits>
+      <thead><tr><th>Artist</th><th>Title</th><th class=yr>Year</th></tr></thead>
+      <tbody><tr class=mq><td class=art>CIZA</td><td class=ttl>Ivule</td><td class=yr>2026</td></tr><tr class=mq><td class=art>Omah Lay</td><td class=ttl>Water Spirit</td><td class=yr>2026</td></tr><tr class=mq><td class=art>CIZA</td><td class=ttl>Abantu</td><td class=yr>2025</td></tr><tr class=mq><td class=art>Keinemusik, Uncle Waffles</td><td class=ttl>Tanzania (Rampa Keinemusik Remix)</td><td class=yr>2024</td></tr><tr><td class=art>Tony Duardo</td><td class=ttl>Young People Must Be Fine<span class=own>his own release</span></td><td class=yr>2024</td></tr><tr><td class=art>Tshepi, Seekay</td><td class=ttl>Location</td><td class=yr>2024</td></tr><tr class=mq><td class=art>TxC</td><td class=ttl>Yebo</td><td class=yr>2024</td></tr><tr class=mq><td class=art>TxC</td><td class=ttl>Turn Off The Lights</td><td class=yr>2024</td></tr><tr class=mq><td class=art>TxC, LeeMckrazy</td><td class=ttl>Thula Nana</td><td class=yr>2024</td></tr><tr class=mq><td class=art>TYLA</td><td class=ttl>Shake Ah</td><td class=yr>2024</td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Morrocco</td><td class=yr>2024</td></tr><tr class=mq><td class=art>Adekunle Gold</td><td class=ttl>Chasing Peace Of Mind</td><td class=yr>2023</td></tr><tr class=mq><td class=art>CIZA, DJ Maphorisa</td><td class=ttl>Bank Notification</td><td class=yr>2023</td></tr><tr class=mq><td class=art>Davido</td><td class=ttl>FEEL</td><td class=yr>2023</td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Echoes</td><td class=yr>2023</td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Uwe Lona</td><td class=yr>2023</td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Babie</td><td class=yr>2023</td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Angry Birds</td><td class=yr>2023</td></tr><tr class=mq><td class=art>CIZA</td><td class=ttl>Ola Mama</td><td class=yr>2022</td></tr><tr><td class=art>Jux, Marioo</td><td class=ttl>Nice (Kiss)</td><td class=yr>2022</td></tr><tr><td class=art>Seekay</td><td class=ttl>Harare</td><td class=yr>2022</td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Tanzania</td><td class=yr>2022</td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Yahyupiyah</td><td class=yr>2022</td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Love I Need</td><td class=yr>2022</td></tr><tr><td class=art>Gazza</td><td class=ttl>Superstar</td><td class=yr>2021</td></tr><tr><td class=art>Chley</td><td class=ttl>Unbreak My Heart</td><td class=yr><span class=na>&mdash;</span></td></tr><tr class=mq><td class=art>CIZA</td><td class=ttl>Voodoo</td><td class=yr><span class=na>&mdash;</span></td></tr><tr class=mq><td class=art>CIZA</td><td class=ttl>Free Me</td><td class=yr><span class=na>&mdash;</span></td></tr><tr class=mq><td class=art>CIZA, Mario</td><td class=ttl>Shortey</td><td class=yr><span class=na>&mdash;</span></td></tr><tr class=mq><td class=art>DJ Maphorisa, CIZA</td><td class=ttl>Oya Dance</td><td class=yr><span class=na>&mdash;</span></td></tr><tr><td class=art>DJ Ndiyo</td><td class=ttl>Ndiyo</td><td class=yr><span class=na>&mdash;</span></td></tr><tr><td class=art>DJ Spinall</td><td class=ttl>Living</td><td class=yr><span class=na>&mdash;</span></td></tr><tr class=mq><td class=art>Elaine</td><td class=ttl>La Vida Loca</td><td class=yr><span class=na>&mdash;</span></td></tr><tr><td class=art>Malachi</td><td class=ttl>Like That</td><td class=yr><span class=na>&mdash;</span></td></tr><tr><td class=art>Marioo</td><td class=ttl>Dear Ex</td><td class=yr><span class=na>&mdash;</span></td></tr><tr class=mq><td class=art>Marioo, TYLA</td><td class=ttl>Amawele</td><td class=yr><span class=na>&mdash;</span></td></tr><tr><td class=art>Skyla Tyla</td><td class=ttl>2AM In Jozi</td><td class=yr><span class=na>&mdash;</span></td></tr><tr class=mq><td class=art>TxC</td><td class=ttl>Glory</td><td class=yr><span class=na>&mdash;</span></td></tr></tbody>
+    </table>
+  </div>
+
+  <div class=note>
+    <p><strong>What a credit means here.</strong> These are publishing credits &mdash; the writing
+    and the production behind the record. They are not artist releases and we make no claim on the
+    recordings. The one exception is <strong>&ldquo;Young People Must Be Fine&rdquo; (2024)</strong>,
+    which is Tony Duardo&rsquo;s own release.</p>
+    <p class=small>No streaming, chart or sales figures are published on this page. The catalogue
+    holds the credit and the publishing split; anything beyond that we would have to measure before
+    we would put a number next to it.</p>
+  </div>
+
+  <p class=eyebrow>Work with the team</p>
+  <h2 id=work>Bring us a record</h2>
+  <div class="grid c2">
+    <div class="card feat">
+      <div class=k>Music services</div>
+      <h3>Production, writing, mix and master</h3>
+      <p>The same room this catalogue came out of. Scope, turnaround and what you get back are
+      all set out on the offers page.</p>
+      <a class="btn gold" href="/offers/">See the offers</a>
+    </div>
+    <div class=card>
+      <div class=k>Direct enquiries</div>
+      <h3>Talk to us first</h3>
+      <p>Catalogue, publishing administration, a placement, or a record you want made &mdash;
+      write to us and say what you are working on.</p>
+      <a class="btn ghost" href="mailto:david@visiocorp.co">david@visiocorp.co</a>
+    </div>
+  </div>
+
+  <footer class=site>
+    Visiocorp is a trading name of <strong>Touchline Agency (Pty) Ltd</strong>, registration number <strong>2025/335979/07</strong>, of 946 Morudi Street, Tlhabane, Rustenburg, North West 0309, South Africa. Not registered for VAT.<br>
+    +27 71 548 6226 &middot; <a href="mailto:david@visiocorp.co">david@visiocorp.co</a><br>
+    <a href="/terms/">Terms and Conditions</a> &middot; <a href="/refund-policy/">Refund and Cancellation Policy</a> &middot; <a href="/privacy/">Privacy and POPIA</a> &middot; <a href="/delivery/">Delivery</a> &middot; <a href="/contact/">Contact</a>
+    <p class=pay>Card payments are processed by Yoco and Payfast over a secure connection.
+    We never see or store your card details. Prices quoted in US dollars are charged in South
+    African rand at the rate on the day. Page updated 14 September 2026.</p>
+  </footer>
+</main>
+</body></html>

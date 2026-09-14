@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Visiocorp</title>
+<meta name="description" content="Trading details, contact addresses, business hours and complaints procedure for Touchline Agency (Pty) Ltd, trading as Visiocorp.">
+<link rel="canonical" href="https://visiocorp.co/contact/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050505;--fg:#f2f2f0;--mut:#8f8f8a;--line:#232323;--acc:#c9a227;--card:#0b0b0b;
+--sans:Inter,'Helvetica Neue',Helvetica,Arial,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;
+line-height:1.7;letter-spacing:.01em;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px 96px}
+.wrap.wide{max-width:1080px}
+header.top{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(5,5,5,.93);
+backdrop-filter:blur(10px);z-index:20}
+header.top .bar{max-width:1080px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;
+justify-content:space-between;gap:20px;flex-wrap:wrap}
+.brand{font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:13px;text-decoration:none;white-space:nowrap}
+nav.main{display:flex;gap:22px;flex-wrap:wrap}
+nav.main a{font-size:13.5px;color:var(--mut);text-decoration:none}
+nav.main a:hover,nav.main a[aria-current]{color:var(--fg)}
+h1{font-size:clamp(32px,6vw,52px);line-height:1.07;font-weight:600;letter-spacing:-.025em;margin:60px 0 16px}
+.sub{color:var(--mut);font-size:clamp(17px,2.2vw,20px);line-height:1.55;margin:0 0 34px;max-width:60ch}
+h2{font-size:clamp(21px,3vw,27px);font-weight:600;letter-spacing:-.015em;margin:56px 0 12px;scroll-margin-top:80px}
+h3{font-size:17px;font-weight:600;margin:28px 0 6px}
+p{margin:0 0 16px;color:#dcdcd8}
+ul,ol{margin:0 0 16px;padding-left:22px;color:#dcdcd8}
+li{margin:0 0 9px}
+strong,b{color:var(--fg);font-weight:600}
+.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
+border-top:1px solid var(--line);padding-top:14px;margin:64px 0 14px}
+.eyebrow+h2{margin-top:0}
+.small{font-size:14px;color:var(--mut);line-height:1.6}
+.grid{display:grid;gap:18px;margin:26px 0 0}
+.grid.c2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.grid.c3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{border:1px solid var(--line);border-radius:12px;padding:26px;background:var(--card);
+display:flex;flex-direction:column}
+.card.feat{border-color:var(--acc)}
+.card .k{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);margin-bottom:12px}
+.card h3{margin:0 0 6px;font-size:19px}
+.card p{font-size:15px;line-height:1.6}
+.price{font-size:38px;line-height:1;font-weight:600;letter-spacing:-.03em;margin:6px 0 2px}
+.price span{font-size:13px;font-weight:400;color:var(--mut);letter-spacing:.06em;margin-left:6px}
+.zar{font-size:13px;color:var(--mut);margin:0 0 16px}
+.btn{display:inline-block;padding:13px 26px;border-radius:999px;text-decoration:none;font-size:15px;
+font-weight:600;border:1px solid var(--fg);color:var(--bg);background:var(--fg);transition:.15s;margin-top:auto}
+.btn:hover{opacity:.86}
+.btn.ghost{background:transparent;color:var(--fg)}
+.btn.gold{background:var(--acc);border-color:var(--acc);color:#161200}
+.btn.wide{display:block;text-align:center}
+table{width:100%;border-collapse:collapse;margin:22px 0;font-size:15px}
+th{text-align:left;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);
+border-bottom:1px solid var(--line);padding:0 14px 10px 0;font-weight:600}
+td{border-bottom:1px solid var(--line);padding:13px 14px 13px 0;vertical-align:top;color:#dcdcd8}
+td.r,th.r{text-align:right;padding-right:0;white-space:nowrap}
+.note{border:1px solid var(--line);border-left:2px solid var(--acc);border-radius:0 10px 10px 0;
+padding:18px 22px;margin:28px 0;background:#0a0a0a}
+.note p:last-child{margin:0}
+form.sub-form{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 0}
+form.sub-form input{flex:1 1 240px;background:#0d0d0d;border:1px solid var(--line);border-radius:999px;
+padding:13px 20px;color:var(--fg);font-family:inherit;font-size:15px}
+form.sub-form input:focus{outline:none;border-color:var(--acc)}
+form.sub-form button{padding:13px 26px;border-radius:999px;border:1px solid var(--fg);background:var(--fg);
+color:var(--bg);font-family:inherit;font-size:15px;font-weight:600;cursor:pointer}
+footer.site{border-top:1px solid var(--line);margin-top:86px;padding:34px 0 0;color:var(--mut);
+font-size:13px;line-height:1.8}
+footer.site a{color:var(--mut)}
+footer.site .pay{margin:14px 0 0;font-size:12px}
+@media(max-width:600px){h1{margin-top:40px}.card{padding:22px}}
+@media print{body{background:#fff;color:#111}header.top{display:none}p,td,li{color:#222}}
+</style>
+</head><body>
+<header class=top><div class=bar>
+  <a class=brand href="/">Visiocorp</a>
+  <nav class=main><a href="/offers/">Offers</a><a href="/intel/">Intel</a><a href="/the-seat/">The Seat</a><a href="/tony-duardo/">Tony Duardo</a></nav>
+</div></header>
+<main class="wrap">
+  <h1>Contact</h1>
+  <p class=sub>The full trading details, who to write to, and how a complaint is handled.</p>
+<div class=note>
+  <p><strong>We do not run a public checkout.</strong> Nothing on this site can be bought
+  by clicking a price. Every sale starts with a written quote or service agreement stating
+  the scope, the price, the currency and the delivery date — and a payment request is
+  issued only once you have accepted it, and only for the amount stated in it.</p>
+</div>
+
+<p class=eyebrow>Trading details</p>
+<h2>Who you are dealing with</h2>
+<table>
+  <tr><td>Legal entity</td><td><strong>Touchline Agency (Pty) Ltd</strong>, a private company incorporated in South Africa</td></tr>
+  <tr><td>Registration number</td><td>2025/335979/07</td></tr>
+  <tr><td>Income tax number</td><td>9771464196</td></tr>
+  <tr><td>VAT</td><td>Not registered for VAT. No VAT is charged on any invoice.</td></tr>
+  <tr><td>Director</td><td>K. R. Mogaki (sole director)</td></tr>
+  <tr><td>Trading name</td><td>Visiocorp</td></tr>
+  <tr><td>Registered and business address</td><td>946 Morudi Street, Tlhabane, Rustenburg, North West 0309, South Africa</td></tr>
+  <tr><td>Telephone</td><td>+27 71 548 6226</td></tr>
+  <tr><td>Email</td><td><a href="mailto:david@visiocorp.co">david@visiocorp.co</a></td></tr>
+  <tr><td>Accounts and billing</td><td><a href="mailto:admin@visiocorp.co">admin@visiocorp.co</a></td></tr>
+  <tr><td>Website</td><td>https://visiocorp.co</td></tr>
+  <tr><td>Hours</td><td>Monday to Friday, South African business hours (SAST, UTC+2)</td></tr>
+</table>
+
+<div class="grid c2">
+  <div class=card>
+    <div class=k>Quotes, orders and delivery</div>
+    <h3><a href="mailto:david@visiocorp.co">david@visiocorp.co</a></h3>
+    <p class=small>Anything about the work itself: a quote, a brief, a live order, a
+    delivery you are chasing, a request about your personal information.</p>
+  </div>
+  <div class=card>
+    <div class=k>Invoices and payments</div>
+    <h3><a href="mailto:admin@visiocorp.co">admin@visiocorp.co</a></h3>
+    <p class=small>Anything about the money: an invoice, a payment request, a receipt,
+    a refund already agreed.</p>
+  </div>
+</div>
+
+<p class=eyebrow>Complaints</p>
+<h2>If something is wrong</h2>
+<p>Tell us first, at <a href="mailto:david@visiocorp.co">david@visiocorp.co</a> or +27 71 548 6226. We <strong>acknowledge within two
+business days</strong> and give a <strong>written outcome within ten</strong>.</p>
+<p>Contacting us does not limit any right you have. If you are a consumer and we cannot
+resolve the matter between us, you may refer it to the <strong>National Consumer
+Commission</strong>. If your complaint is about personal information, you may take it to
+the <strong>Information Regulator of South Africa</strong>.</p>
+
+<p class=eyebrow>Payments</p>
+<h2>How we charge</h2>
+<p>Card payments are processed by <strong>Yoco</strong> and <strong>Payfast</strong> on
+their secure pages. We never see or store your card details. We quote international
+customers in US dollars and charge in South African rand at the rate applied on the day
+the payment request is created; the rand amount is shown to you before you pay.</p>
+
+<p class=small>Read with this page: the <a href="/terms/">Terms and Conditions</a> and the <a href="/refund-policy/">Refund and Cancellation Policy</a>.</p>
+  <footer class=site>
+    Visiocorp is a trading name of <strong>Touchline Agency (Pty) Ltd</strong>, registration number <strong>2025/335979/07</strong>, of 946 Morudi Street, Tlhabane, Rustenburg, North West 0309, South Africa. Not registered for VAT.<br>
+    +27 71 548 6226 &middot; <a href="mailto:david@visiocorp.co">david@visiocorp.co</a><br>
+    <a href="/terms/">Terms and Conditions</a> &middot; <a href="/refund-policy/">Refund and Cancellation Policy</a> &middot; <a href="/privacy/">Privacy and POPIA</a> &middot; <a href="/delivery/">Delivery</a> &middot; <a href="/contact/">Contact</a>
+    <p class=pay>Card payments are processed by Yoco and Payfast over a secure connection.
+    We never see or store your card details. Prices quoted in US dollars are charged in South
+    African rand at the rate on the day. Page updated 14 September 2026.</p>
+  </footer>
+</main>
+</body></html>

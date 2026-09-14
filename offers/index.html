@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What we do — Visiocorp</title>
+<meta name="description" content="The Touchline Agency service menu: music products and services, talent management and brand campaigns, release campaign services, and where to find our data and research.">
+<link rel="canonical" href="https://visiocorp.co/offers/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050505;--fg:#f2f2f0;--mut:#8f8f8a;--line:#232323;--acc:#c9a227;--card:#0b0b0b;
+--sans:Inter,'Helvetica Neue',Helvetica,Arial,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;
+line-height:1.7;letter-spacing:.01em;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px 96px}
+.wrap.wide{max-width:1080px}
+header.top{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(5,5,5,.93);
+backdrop-filter:blur(10px);z-index:20}
+header.top .bar{max-width:1080px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;
+justify-content:space-between;gap:20px;flex-wrap:wrap}
+.brand{font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:13px;text-decoration:none;white-space:nowrap}
+nav.main{display:flex;gap:22px;flex-wrap:wrap}
+nav.main a{font-size:13.5px;color:var(--mut);text-decoration:none}
+nav.main a:hover,nav.main a[aria-current]{color:var(--fg)}
+h1{font-size:clamp(32px,6vw,52px);line-height:1.07;font-weight:600;letter-spacing:-.025em;margin:60px 0 16px}
+.sub{color:var(--mut);font-size:clamp(17px,2.2vw,20px);line-height:1.55;margin:0 0 34px;max-width:60ch}
+h2{font-size:clamp(21px,3vw,27px);font-weight:600;letter-spacing:-.015em;margin:56px 0 12px;scroll-margin-top:80px}
+h3{font-size:17px;font-weight:600;margin:28px 0 6px}
+p{margin:0 0 16px;color:#dcdcd8}
+ul,ol{margin:0 0 16px;padding-left:22px;color:#dcdcd8}
+li{margin:0 0 9px}
+strong,b{color:var(--fg);font-weight:600}
+.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
+border-top:1px solid var(--line);padding-top:14px;margin:64px 0 14px}
+.eyebrow+h2{margin-top:0}
+.small{font-size:14px;color:var(--mut);line-height:1.6}
+.grid{display:grid;gap:18px;margin:26px 0 0}
+.grid.c2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.grid.c3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{border:1px solid var(--line);border-radius:12px;padding:26px;background:var(--card);
+display:flex;flex-direction:column}
+.card.feat{border-color:var(--acc)}
+.card .k{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);margin-bottom:12px}
+.card h3{margin:0 0 6px;font-size:19px}
+.card p{font-size:15px;line-height:1.6}
+.price{font-size:38px;line-height:1;font-weight:600;letter-spacing:-.03em;margin:6px 0 2px}
+.price span{font-size:13px;font-weight:400;color:var(--mut);letter-spacing:.06em;margin-left:6px}
+.zar{font-size:13px;color:var(--mut);margin:0 0 16px}
+.btn{display:inline-block;padding:13px 26px;border-radius:999px;text-decoration:none;font-size:15px;
+font-weight:600;border:1px solid var(--fg);color:var(--bg);background:var(--fg);transition:.15s;margin-top:auto}
+.btn:hover{opacity:.86}
+.btn.ghost{background:transparent;color:var(--fg)}
+.btn.gold{background:var(--acc);border-color:var(--acc);color:#161200}
+.btn.wide{display:block;text-align:center}
+table{width:100%;border-collapse:collapse;margin:22px 0;font-size:15px}
+th{text-align:left;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);
+border-bottom:1px solid var(--line);padding:0 14px 10px 0;font-weight:600}
+td{border-bottom:1px solid var(--line);padding:13px 14px 13px 0;vertical-align:top;color:#dcdcd8}
+td.r,th.r{text-align:right;padding-right:0;white-space:nowrap}
+.note{border:1px solid var(--line);border-left:2px solid var(--acc);border-radius:0 10px 10px 0;
+padding:18px 22px;margin:28px 0;background:#0a0a0a}
+.note p:last-child{margin:0}
+form.sub-form{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 0}
+form.sub-form input{flex:1 1 240px;background:#0d0d0d;border:1px solid var(--line);border-radius:999px;
+padding:13px 20px;color:var(--fg);font-family:inherit;font-size:15px}
+form.sub-form input:focus{outline:none;border-color:var(--acc)}
+form.sub-form button{padding:13px 26px;border-radius:999px;border:1px solid var(--fg);background:var(--fg);
+color:var(--bg);font-family:inherit;font-size:15px;font-weight:600;cursor:pointer}
+footer.site{border-top:1px solid var(--line);margin-top:86px;padding:34px 0 0;color:var(--mut);
+font-size:13px;line-height:1.8}
+footer.site a{color:var(--mut)}
+footer.site .pay{margin:14px 0 0;font-size:12px}
+@media(max-width:600px){h1{margin-top:40px}.card{padding:22px}}
+@media print{body{background:#fff;color:#111}header.top{display:none}p,td,li{color:#222}}
+</style>
+<style>
+.eyebrow{scroll-margin-top:96px}
+.grid + p,.grid + .note{margin-top:26px}
+@media(min-width:700px){.grid.trio{grid-template-columns:repeat(3,1fr)}}
+.lines td.r{width:1%}
+@media(max-width:640px){
+  .lines thead{display:none}
+  .lines tr{display:block;padding:18px 0;border-bottom:1px solid var(--line)}
+  .lines tr:last-child{border-bottom:0}
+  .lines td{display:block;width:auto;border:0;padding:0}
+  .lines td.r{width:auto;text-align:left;white-space:normal;color:var(--acc);
+    font-weight:600;margin-top:10px}
+}
+</style>
+</head><body>
+<header class=top><div class=bar>
+  <a class=brand href="/">Visiocorp</a>
+  <nav class=main><a href="/offers/" aria-current=page>Offers</a><a href="/intel/">Intel</a><a href="/the-seat/">The Seat</a><a href="/tony-duardo/">Tony Duardo</a></nav>
+</div></header>
+<main class="wrap">
+  <h1>What we do</h1>
+  <p class=sub>Touchline Agency makes records, represents artists and creators, and runs release campaigns. Every line below is quoted in writing before you pay &mdash; there is no checkout on this page.</p>
+
+  <div class=note>
+    <p><strong>There is no checkout on this page.</strong> Everything below is quoted. You tell us
+    what you need, we send a written quote or service agreement naming the scope, the price, the
+    currency, the delivery date and the revision rounds &mdash; and only once you accept it do we
+    send a payment request.</p>
+  </div>
+
+  <div class="grid c2"><div class=card><div class=k>01</div><h3>Music products and services</h3><p>Beats, mixing, mastering, sessions and full record packages &mdash; bought by artists, labels, managers and brands.</p><a class="btn ghost" href="#music">See the music lines</a></div><div class=card><div class=k>02</div><h3>Talent management and brand campaigns</h3><p>We represent artists and creators, and brands engage us to work with them. Management is earned on commission; brand work is contracted per campaign.</p><a class="btn ghost" href="#talent">See the talent lines</a></div><div class=card><div class=k>03</div><h3>Release campaign services</h3><p>The lines an artist buys for a record: playlist, paid advertising, outreach and seeding, radio and press, content.</p><a class="btn ghost" href="#campaign">See the campaign lines</a></div><div class=card><div class=k>04</div><h3>Data, research and newsletters</h3><p>Market and industry research, data sets and paid newsletters, published under our Visiocorp name and sold as digital subscriptions.</p><a class="btn ghost" href="/intel/">Go to Intel</a></div></div>
+
+  <div class=eyebrow id=music>01 &middot; Music products and services</div>
+  <h2>Sold to artists, labels, managers and brands</h2>
+  <p>These are the lines an artist most often pays for directly. Every order is scoped and priced
+  in writing before payment is requested, and the exact figure is confirmed on the quote you
+  receive.</p>
+  <table class=lines><thead><tr><th>What you are buying</th><th class=r>Price</th></tr></thead><tbody><tr><td><strong>Beats and instrumentals</strong><br><span class=small>Original instrumental compositions supplied as a digital download (WAV/MP3, and stems where the licence includes them) under a written licence that names the permitted use, the territory and the term.</span></td><td class=r>Quoted per licence</td></tr><tr><td><strong>Mixing</strong><br><span class=small>A mixed, master-ready stereo file from your supplied multitrack session, including the revision rounds stated on the order.</span></td><td class=r>From $500 per song</td></tr><tr><td><strong>Mastering</strong><br><span class=small>A release-ready master prepared to streaming and broadcast loudness standards, delivered as WAV and MP3, with the DDP where it is required.</span></td><td class=r>From $500 per song</td></tr><tr><td><strong>Recording and production sessions</strong><br><span class=small>Studio time with a producer and engineer, booked to a dated diary slot, delivered as the agreed session files.</span></td><td class=r>$500 &ndash; $1,100 per session</td></tr><tr><td><strong>Song and record packages</strong><br><span class=small>Production, recording, mixing and mastering bundled for a single record, scoped and priced in a written agreement before any payment is taken.</span></td><td class=r>Quoted per record</td></tr></tbody></table>
+  <p class=small>Beats, instrumentals, mixes and masters are delivered as digital files by download
+  link or file transfer to the email address on the order &mdash; typically within
+  <strong>3 to 10 business days</strong> of receiving both payment and your material, and on the
+  date agreed in writing where a project has its own schedule. Sessions are delivered as booked
+  studio time on the diarised date. Nothing is posted or couriered.</p>
+  <p><a class="btn gold" href="mailto:david@visiocorp.co?subject=Quote%20request%20%E2%80%94%20music%20services">Request a quote for music work</a></p>
+
+  <div class=eyebrow id=talent>02 &middot; Talent management and brand campaigns</div>
+  <h2>Representation, partnerships and campaigns</h2>
+  <p>We represent artists and creators, and we are engaged by brands and agencies that want to work
+  with them. Management income is an agreed commission on what the talent earns. Brand and campaign
+  work is invoiced to the brand or agency against a signed campaign agreement.</p>
+  <table class=lines><thead><tr><th>What you are buying</th><th class=r>Price</th></tr></thead><tbody><tr><td><strong>Artist and talent management</strong><br><span class=small>Career management for the artists and creators we represent &mdash; bookings, brand partnerships, negotiation, contracting and administration. Our managed artist is <strong>Tony Duardo</strong>.</span></td><td class=r>Commission on income earned</td></tr><tr><td><strong>Brand campaigns</strong><br><span class=small>A brand or agency engages us to design and run a campaign with our talent. Deliverables, usage rights, disclosure and reporting are set out in a campaign agreement.</span></td><td class=r>Quoted per campaign</td></tr><tr><td><strong>Strategy and media</strong><br><span class=small>Positioning, narrative, rate-setting and media planning for an artist, a creator or a brand.</span></td><td class=r>Quoted per engagement</td></tr></tbody></table>
+  <p class=small>Clients contract with the company, never with an individual artist or creator.
+  Usage rights, territory, exclusivity and disclosure obligations are set out in the campaign
+  agreement, and all paid content is disclosed in line with the ARB Code of Advertising Practice
+  and the Consumer Protection Act.</p>
+  <p><a class="btn gold" href="mailto:david@visiocorp.co?subject=Enquiry%20%E2%80%94%20talent%20management%20or%20brand%20campaign">Talk to us about talent or a campaign</a></p>
+
+  <div class=eyebrow id=campaign>03 &middot; Release campaign services</div>
+  <h2>Bought per release, by artists and labels</h2>
+  <p>You buy the lines you want for a record. Each line is a service we perform and report on. The
+  prices below are indicative; the exact figure is confirmed on the written quote before you pay.</p>
+  <table class=lines><thead><tr><th>What you are buying</th><th class=r>Price</th></tr></thead><tbody><tr><td><strong>Playlist campaign</strong><br><span class=small>Pitching a record to independent curators and playlist networks, plus editorial submission through the official channels, with a report of placements.</span></td><td class=r>&asymp; $1,000</td></tr><tr><td><strong>Paid advertising</strong><br><span class=small>Paid social and streaming-platform advertising for a record, weighted to chosen territories, with spend and results reported.</span></td><td class=r>&asymp; $1,500</td></tr><tr><td><strong>Outreach and seeding</strong><br><span class=small>Contacting creators, DJs, pages and fans at volume for a release, including DJ servicing to a verified DJ list and creator seeding.</span></td><td class=r>&asymp; $3,200</td></tr><tr><td><strong>Radio and press servicing</strong><br><span class=small>Servicing a record to radio programmers and publications by territory, with follow-up and a coverage report.</span></td><td class=r>Quoted per release</td></tr><tr><td><strong>Content production</strong><br><span class=small>Release assets produced for you: visuals, cutdowns, hooks and short-form clips, delivered as digital files.</span></td><td class=r>Quoted per package</td></tr></tbody></table>
+  <div class=note>
+    <p><strong>What we do not promise.</strong> Campaign services are the performance of agreed
+    activity, reported on. We do not guarantee streams, placements, chart positions, followers,
+    coverage, sales or revenue, and no such outcome forms part of what you are buying. We say this
+    in writing before anyone pays.</p>
+  </div>
+  <p class=small>Each campaign line runs over an agreed window &mdash; usually the release week and
+  the four to six weeks that follow &mdash; and closes with a written report of what was done and
+  what it produced.</p>
+  <p><a class="btn gold" href="mailto:david@visiocorp.co?subject=Quote%20request%20%E2%80%94%20release%20campaign">Request a campaign quote</a></p>
+
+  <div class=eyebrow id=intel>04 &middot; Data, research and newsletters</div>
+  <h2>Published under our Visiocorp name</h2>
+  <p>Research reports, market and industry data sets and paid newsletters, delivered digitally to
+  the subscriber. Those products, their tiers and their prices live on their own page.</p>
+  <p><a class="btn ghost" href="/intel/">Go to Intel</a></p>
+
+  <div class=eyebrow id=buying>How you buy</div>
+  <h2>The order path, end to end</h2>
+  <ol>
+    <li><strong>Enquiry.</strong> You email us, or reach us through our social accounts, or we
+    approach you.</li>
+    <li><strong>Written quote or agreement.</strong> We send a quote or service agreement naming the
+    exact scope, the price, the currency, the delivery date and the revision rounds. Our Terms and
+    Conditions and our Refund and Cancellation Policy are attached to it.</li>
+    <li><strong>Payment request.</strong> Once you accept, we send a Payfast or Yoco payment request
+    for that exact amount. The payment page shows the amount, the currency and what it is for.</li>
+    <li><strong>Delivery.</strong> We deliver the files, the booked session or the campaign as
+    scoped.</li>
+    <li><strong>Aftercare.</strong> Revisions, reporting and support run as set out in the
+    agreement. Complaints go to david@visiocorp.co and are acknowledged within two business
+    days.</li>
+  </ol>
+
+  <div class="grid c3 trio">
+    <div class=card>
+      <div class=k>Currency</div>
+      <h3>Quoted in USD, charged in ZAR</h3>
+      <p>We quote internationally in US dollars and charge in South African rand at the rate on the
+      day the payment request is created. The rand amount is always shown to you before you pay.</p>
+    </div>
+    <div class=card>
+      <div class=k>Tax</div>
+      <h3>Not registered for VAT</h3>
+      <p>Touchline Agency (Pty) Ltd is not registered for VAT, so no VAT is added to any quote,
+      invoice or payment request.</p>
+    </div>
+    <div class=card>
+      <div class=k>Delivery</div>
+      <h3>3 to 10 business days</h3>
+      <p>Digital files are delivered within 3 to 10 business days of the later of cleared payment
+      and our receipt of everything we need from you, unless the agreement states another date.</p>
+    </div>
+  </div>
+
+  <div class=note>
+    <p>Prefer to read the paperwork first? The <a href="/terms/">Terms and Conditions</a> and the
+    <a href="/refund-policy/">Refund and Cancellation Policy</a> govern every order, and both are
+    issued with every quote.</p>
+  </div>
+
+  <div class=eyebrow>Start here</div>
+  <h2>Tell us what the record needs</h2>
+  <p>One email is enough: what you are making, what you have already, and when you need it. We come
+  back with a written quote.</p>
+  <p><a class="btn gold" href="mailto:david@visiocorp.co?subject=Enquiry%20%E2%80%94%20Touchline%20Agency">Email
+  david@visiocorp.co</a></p>
+
+  <footer class=site>
+    Visiocorp is a trading name of <strong>Touchline Agency (Pty) Ltd</strong>, registration number <strong>2025/335979/07</strong>, of 946 Morudi Street, Tlhabane, Rustenburg, North West 0309, South Africa. Not registered for VAT.<br>
+    +27 71 548 6226 &middot; <a href="mailto:david@visiocorp.co">david@visiocorp.co</a><br>
+    <a href="/terms/">Terms and Conditions</a> &middot; <a href="/refund-policy/">Refund and Cancellation Policy</a> &middot; <a href="/privacy/">Privacy and POPIA</a> &middot; <a href="/delivery/">Delivery</a> &middot; <a href="/contact/">Contact</a>
+    <p class=pay>Card payments are processed by Yoco and Payfast over a secure connection.
+    We never see or store your card details. Prices quoted in US dollars are charged in South
+    African rand at the rate on the day. Page updated 14 September 2026.</p>
+  </footer>
+</main>
+</body></html>

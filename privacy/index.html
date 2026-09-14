@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy and POPIA — Visiocorp</title>
+<meta name="description" content="How Touchline Agency (Pty) Ltd, trading as Visiocorp, handles personal information under POPIA.">
+<link rel="canonical" href="https://visiocorp.co/privacy/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050505;--fg:#f2f2f0;--mut:#8f8f8a;--line:#232323;--acc:#c9a227;--card:#0b0b0b;
+--sans:Inter,'Helvetica Neue',Helvetica,Arial,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;
+line-height:1.7;letter-spacing:.01em;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px 96px}
+.wrap.wide{max-width:1080px}
+header.top{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(5,5,5,.93);
+backdrop-filter:blur(10px);z-index:20}
+header.top .bar{max-width:1080px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;
+justify-content:space-between;gap:20px;flex-wrap:wrap}
+.brand{font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:13px;text-decoration:none;white-space:nowrap}
+nav.main{display:flex;gap:22px;flex-wrap:wrap}
+nav.main a{font-size:13.5px;color:var(--mut);text-decoration:none}
+nav.main a:hover,nav.main a[aria-current]{color:var(--fg)}
+h1{font-size:clamp(32px,6vw,52px);line-height:1.07;font-weight:600;letter-spacing:-.025em;margin:60px 0 16px}
+.sub{color:var(--mut);font-size:clamp(17px,2.2vw,20px);line-height:1.55;margin:0 0 34px;max-width:60ch}
+h2{font-size:clamp(21px,3vw,27px);font-weight:600;letter-spacing:-.015em;margin:56px 0 12px;scroll-margin-top:80px}
+h3{font-size:17px;font-weight:600;margin:28px 0 6px}
+p{margin:0 0 16px;color:#dcdcd8}
+ul,ol{margin:0 0 16px;padding-left:22px;color:#dcdcd8}
+li{margin:0 0 9px}
+strong,b{color:var(--fg);font-weight:600}
+.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
+border-top:1px solid var(--line);padding-top:14px;margin:64px 0 14px}
+.eyebrow+h2{margin-top:0}
+.small{font-size:14px;color:var(--mut);line-height:1.6}
+.grid{display:grid;gap:18px;margin:26px 0 0}
+.grid.c2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.grid.c3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{border:1px solid var(--line);border-radius:12px;padding:26px;background:var(--card);
+display:flex;flex-direction:column}
+.card.feat{border-color:var(--acc)}
+.card .k{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);margin-bottom:12px}
+.card h3{margin:0 0 6px;font-size:19px}
+.card p{font-size:15px;line-height:1.6}
+.price{font-size:38px;line-height:1;font-weight:600;letter-spacing:-.03em;margin:6px 0 2px}
+.price span{font-size:13px;font-weight:400;color:var(--mut);letter-spacing:.06em;margin-left:6px}
+.zar{font-size:13px;color:var(--mut);margin:0 0 16px}
+.btn{display:inline-block;padding:13px 26px;border-radius:999px;text-decoration:none;font-size:15px;
+font-weight:600;border:1px solid var(--fg);color:var(--bg);background:var(--fg);transition:.15s;margin-top:auto}
+.btn:hover{opacity:.86}
+.btn.ghost{background:transparent;color:var(--fg)}
+.btn.gold{background:var(--acc);border-color:var(--acc);color:#161200}
+.btn.wide{display:block;text-align:center}
+table{width:100%;border-collapse:collapse;margin:22px 0;font-size:15px}
+th{text-align:left;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);
+border-bottom:1px solid var(--line);padding:0 14px 10px 0;font-weight:600}
+td{border-bottom:1px solid var(--line);padding:13px 14px 13px 0;vertical-align:top;color:#dcdcd8}
+td.r,th.r{text-align:right;padding-right:0;white-space:nowrap}
+.note{border:1px solid var(--line);border-left:2px solid var(--acc);border-radius:0 10px 10px 0;
+padding:18px 22px;margin:28px 0;background:#0a0a0a}
+.note p:last-child{margin:0}
+form.sub-form{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 0}
+form.sub-form input{flex:1 1 240px;background:#0d0d0d;border:1px solid var(--line);border-radius:999px;
+padding:13px 20px;color:var(--fg);font-family:inherit;font-size:15px}
+form.sub-form input:focus{outline:none;border-color:var(--acc)}
+form.sub-form button{padding:13px 26px;border-radius:999px;border:1px solid var(--fg);background:var(--fg);
+color:var(--bg);font-family:inherit;font-size:15px;font-weight:600;cursor:pointer}
+footer.site{border-top:1px solid var(--line);margin-top:86px;padding:34px 0 0;color:var(--mut);
+font-size:13px;line-height:1.8}
+footer.site a{color:var(--mut)}
+footer.site .pay{margin:14px 0 0;font-size:12px}
+@media(max-width:600px){h1{margin-top:40px}.card{padding:22px}}
+@media print{body{background:#fff;color:#111}header.top{display:none}p,td,li{color:#222}}
+</style>
+</head><body>
+<header class=top><div class=bar>
+  <a class=brand href="/">Visiocorp</a>
+  <nav class=main><a href="/offers/">Offers</a><a href="/intel/">Intel</a><a href="/the-seat/">The Seat</a><a href="/tony-duardo/">Tony Duardo</a></nav>
+</div></header>
+<main class="wrap">
+  <h1>Privacy and POPIA</h1>
+  <p class=sub>What we collect, why we hold it, what we never do with it, and how you get it corrected or deleted.</p>
+<div class=note>
+  <p>This page sets out in full what clause 12 of our <a href="/terms/">Terms and Conditions</a> says in short. The two
+  do not differ. We process personal information in line with the Protection of
+  Personal Information Act 4 of 2013 (POPIA).</p>
+</div>
+
+<p class=eyebrow>Responsible party</p>
+<h2>Who holds your information</h2>
+<p>The responsible party is <strong>Touchline Agency (Pty) Ltd</strong>, registration
+number <strong>2025/335979/07</strong>, a private company incorporated in South Africa,
+of 946 Morudi Street, Tlhabane, Rustenburg, North West 0309. Visiocorp is a trading
+name of that company. The sole director is K. R. Mogaki.</p>
+<p>Anything on this page — a question, a request, a complaint — goes to <a href="mailto:david@visiocorp.co">david@visiocorp.co</a> or
++27 71 548 6226.</p>
+
+<p class=eyebrow>What we hold</p>
+<h2>What we collect, and why</h2>
+<p>We collect only what an order needs. If a field is not needed to quote, deliver,
+invoice or support the work, we do not ask for it.</p>
+<table>
+  <tr><th>Information</th><th>Why we have it</th></tr>
+  <tr><td>Name</td><td>To address the quote, the agreement and the invoice to the right person.</td></tr>
+  <tr><td>Email address</td><td>To send the quote, deliver the files or access, invoice you, and answer you.</td></tr>
+  <tr><td>Telephone number</td><td>To reach you about a live order where email is too slow.</td></tr>
+  <tr><td>Billing details</td><td>To raise the payment request and to keep the accounting record the law requires.</td></tr>
+  <tr><td>The content of your order</td><td>The brief, the recordings, stems, artwork, footage or data you send us — because it is the work itself.</td></tr>
+</table>
+<p>We use it to quote, to deliver, to invoice, to support you afterwards, and to meet
+our legal obligations. We use it for nothing else. We do not build profiles, and we do
+not add you to a mailing list because you bought something.</p>
+
+<p class=eyebrow>Limits</p>
+<h2>What we do not do</h2>
+<ul>
+  <li><strong>We do not sell personal information.</strong> Not to a data broker, not to
+  a partner, not to anybody.</li>
+  <li><strong>We never see your card details.</strong> Card payments are processed by
+  Yoco and Payfast. Your card number, expiry and security code are entered on their
+  secure pages and are handled by them. We do not receive them, and we have nothing to
+  store.</li>
+  <li>We share information with other people only where it is needed to do the job you
+  ordered, or where the law requires it. Anyone we use is bound to the same limits.</li>
+</ul>
+
+<p class=eyebrow>Retention</p>
+<h2>How long we keep it</h2>
+<p>We keep your information while the engagement is active, and afterwards for as long
+as the law requires us to keep accounting, tax and company records. Once that period
+ends it is deleted or anonymised. The material you send us for a job — stems, artwork,
+footage, data — is kept while the work runs and for the revision window, and is deleted
+on request.</p>
+
+<p class=eyebrow>Your rights</p>
+<h2>What you can ask us to do</h2>
+<p>Under POPIA you may, at any time:</p>
+<ul>
+  <li><strong>Confirm</strong> whether we hold personal information about you, and ask for a copy of it.</li>
+  <li><strong>Correct</strong> anything that is wrong or out of date.</li>
+  <li><strong>Delete</strong> what we hold, where we are not required by law to keep it.</li>
+  <li><strong>Object</strong> to a particular use of it.</li>
+</ul>
+<p>Write to <a href="mailto:david@visiocorp.co">david@visiocorp.co</a>. We acknowledge the request within two business days and tell you in
+writing what we have done. There is no charge for asking.</p>
+<p>If you are not satisfied with how we have handled it, you may complain to the
+<strong>Information Regulator of South Africa</strong>, which is the authority that
+supervises POPIA. Complaining to us first is not a condition of complaining to them.</p>
+
+<p class=eyebrow>The website</p>
+<h2>Cookies and tracking</h2>
+<p>visiocorp.co is a static site. It sets <strong>no cookies</strong>, runs
+<strong>no analytics</strong>, carries <strong>no advertising or tracking pixels</strong>,
+and does not profile visitors. Reading these pages leaves us knowing nothing about you.</p>
+<p>The one outside request a page makes is for the typeface it is set in, which is
+loaded from Google Fonts; your browser fetches the font file from Google in the ordinary
+way. Nothing else on the page calls out.</p>
+<p>We only hold personal information about you once you send it to us — by email, or on
+an order.</p>
+
+<p class=eyebrow>Changes</p>
+<h2>If this page changes</h2>
+<p>Changes are published here, and the foot of the page carries the date it was last
+updated. Where a change materially affects how we handle information we already hold,
+we tell the clients affected by email.</p>
+
+<p class=small>Read with this page: <a href="/terms/">Terms and Conditions</a> (clause 12 covers personal information) and
+the <a href="/refund-policy/">Refund and Cancellation Policy</a>.</p>
+  <footer class=site>
+    Visiocorp is a trading name of <strong>Touchline Agency (Pty) Ltd</strong>, registration number <strong>2025/335979/07</strong>, of 946 Morudi Street, Tlhabane, Rustenburg, North West 0309, South Africa. Not registered for VAT.<br>
+    +27 71 548 6226 &middot; <a href="mailto:david@visiocorp.co">david@visiocorp.co</a><br>
+    <a href="/terms/">Terms and Conditions</a> &middot; <a href="/refund-policy/">Refund and Cancellation Policy</a> &middot; <a href="/privacy/">Privacy and POPIA</a> &middot; <a href="/delivery/">Delivery</a> &middot; <a href="/contact/">Contact</a>
+    <p class=pay>Card payments are processed by Yoco and Payfast over a secure connection.
+    We never see or store your card details. Prices quoted in US dollars are charged in South
+    African rand at the rate on the day. Page updated 14 September 2026.</p>
+  </footer>
+</main>
+</body></html>

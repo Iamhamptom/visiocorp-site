@@ -78,7 +78,12 @@ footer.site .pay{margin:14px 0 0;font-size:12px}
 @media print{body{background:#fff;color:#111}header.top{display:none}p,td,li{color:#222}}
 </style>
 <style>
-.stats{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));margin:30px 0 0}
+.headline{border:1px solid var(--acc);border-radius:12px;padding:26px 28px;background:var(--card);
+margin:30px 0 0}
+.headline .n{font-size:clamp(30px,5.2vw,44px);line-height:1.06;font-weight:600;letter-spacing:-.03em}
+.headline .q{color:var(--mut);font-size:15px;line-height:1.62;margin:12px 0 0;max-width:64ch}
+.headline .q b{color:#dcdcd8;font-weight:600}
+.stats{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));margin:14px 0 0}
 .stat{border:1px solid var(--line);border-radius:12px;padding:20px 22px;background:var(--card)}
 .stat .n{font-size:34px;line-height:1;font-weight:600;letter-spacing:-.03em}
 .stat .l{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin-top:9px}
@@ -90,16 +95,22 @@ color:#dcdcd8;background:var(--card);white-space:nowrap}
 .chips li i{font-style:normal;color:var(--mut);font-size:12px;margin-left:7px;letter-spacing:.06em}
 .chips li.mq i{color:var(--acc)}
 .tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:22px 0 0}
-.tablewrap table{min-width:430px;margin:0}
-.credits th.yr,.credits td.yr{text-align:right;padding-right:0;white-space:nowrap;width:1%}
+.tablewrap table{min-width:520px;margin:0}
+.credits th.yr,.credits td.yr{text-align:right;white-space:nowrap;width:1%;padding-right:0}
+.credits th.str,.credits td.str{text-align:right;white-space:nowrap;width:1%;padding-right:0;
+padding-left:30px}
+.credits td.str{font-variant-numeric:tabular-nums}
 .credits td.art{color:var(--fg);white-space:nowrap;padding-right:20px}
 .credits tr.mq td.art{color:var(--acc)}
 .credits td.ttl{width:99%}
-.credits td.yr span.na{color:#55554f}
+.credits .na{color:#55554f}
+.credits .lbl{display:none}
 .own{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);
 border:1px solid var(--acc);border-radius:999px;padding:2px 9px;margin-left:10px;white-space:nowrap}
+.legend{font-size:13.5px;color:var(--mut);line-height:1.65;margin:16px 0 0;max-width:78ch}
+.legend b{color:#dcdcd8;font-weight:600}
 @media(max-width:620px){
-  /* Restack every row as its own block: artist, title, year. No sideways scrolling. */
+  /* Restack every row as its own block: artist, title, then year and streams on one meta line. */
   .tablewrap table{min-width:0}
   .credits thead{display:none}
   .credits,.credits tbody,.credits tr,.credits td{display:block;width:auto}
@@ -108,7 +119,13 @@ border:1px solid var(--acc);border-radius:999px;padding:2px 9px;margin-left:10px
   .credits td.art{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--mut)}
   .credits tr.mq td.art{color:var(--acc)}
   .credits td.ttl{font-size:16.5px;color:var(--fg);margin:4px 0 0}
-  .credits td.yr{text-align:left;font-size:13.5px;color:var(--mut);margin:3px 0 0}
+  .credits td.yr,.credits td.str{display:inline-block;width:auto;text-align:left;
+  font-size:13.5px;color:var(--mut);padding:0;margin:4px 0 0}
+  .credits td.str::before{content:"\00b7";color:#55554f;margin:0 8px}
+  /* No year recorded: the bare dash says nothing without its column header, so drop it. */
+  .credits td.yr.none{display:none}
+  .credits td.yr.none+td.str::before{content:none}
+  .credits .lbl{display:inline}
   .own{display:inline-block;margin:4px 0 0 8px}
   .stat .n{font-size:28px}
 }
@@ -122,6 +139,13 @@ border:1px solid var(--acc);border-radius:999px;padding:2px 9px;margin-left:10px
   <h1>Tony Duardo</h1>
   <p class=sub>South African songwriter and producer. A catalogue of 38 released records behind artists in amapiano, afrobeats and afro-house.</p>
 
+  <div class=headline>
+    <div class=n>233.9 million streams</div>
+    <p class=q>across the <b>18 of these 38 records that we currently
+    measure</b>, measured <b>14 September 2026</b>. The other 20 records are not measured
+    in our system, so no figure is claimed for them either way &mdash; the total above is not the
+    whole catalogue.</p>
+  </div>
   <div class=stats>
     <div class=stat><div class=n>38</div><div class=l>Released records</div></div>
     <div class=stat><div class=n>23</div><div class=l>Artists credited</div></div>
@@ -147,19 +171,24 @@ border:1px solid var(--acc);border-radius:999px;padding:2px 9px;margin-left:10px
   blank rather than filled in.</p>
   <div class=tablewrap>
     <table class=credits>
-      <thead><tr><th>Artist</th><th>Title</th><th class=yr>Year</th></tr></thead>
-      <tbody><tr class=mq><td class=art>CIZA</td><td class=ttl>Ivule</td><td class=yr>2026</td></tr><tr class=mq><td class=art>Omah Lay</td><td class=ttl>Water Spirit</td><td class=yr>2026</td></tr><tr class=mq><td class=art>CIZA</td><td class=ttl>Abantu</td><td class=yr>2025</td></tr><tr class=mq><td class=art>Keinemusik, Uncle Waffles</td><td class=ttl>Tanzania (Rampa Keinemusik Remix)</td><td class=yr>2024</td></tr><tr><td class=art>Tony Duardo</td><td class=ttl>Young People Must Be Fine<span class=own>his own release</span></td><td class=yr>2024</td></tr><tr><td class=art>Tshepi, Seekay</td><td class=ttl>Location</td><td class=yr>2024</td></tr><tr class=mq><td class=art>TxC</td><td class=ttl>Yebo</td><td class=yr>2024</td></tr><tr class=mq><td class=art>TxC</td><td class=ttl>Turn Off The Lights</td><td class=yr>2024</td></tr><tr class=mq><td class=art>TxC, LeeMckrazy</td><td class=ttl>Thula Nana</td><td class=yr>2024</td></tr><tr class=mq><td class=art>TYLA</td><td class=ttl>Shake Ah</td><td class=yr>2024</td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Morrocco</td><td class=yr>2024</td></tr><tr class=mq><td class=art>Adekunle Gold</td><td class=ttl>Chasing Peace Of Mind</td><td class=yr>2023</td></tr><tr class=mq><td class=art>CIZA, DJ Maphorisa</td><td class=ttl>Bank Notification</td><td class=yr>2023</td></tr><tr class=mq><td class=art>Davido</td><td class=ttl>FEEL</td><td class=yr>2023</td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Echoes</td><td class=yr>2023</td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Uwe Lona</td><td class=yr>2023</td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Babie</td><td class=yr>2023</td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Angry Birds</td><td class=yr>2023</td></tr><tr class=mq><td class=art>CIZA</td><td class=ttl>Ola Mama</td><td class=yr>2022</td></tr><tr><td class=art>Jux, Marioo</td><td class=ttl>Nice (Kiss)</td><td class=yr>2022</td></tr><tr><td class=art>Seekay</td><td class=ttl>Harare</td><td class=yr>2022</td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Tanzania</td><td class=yr>2022</td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Yahyupiyah</td><td class=yr>2022</td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Love I Need</td><td class=yr>2022</td></tr><tr><td class=art>Gazza</td><td class=ttl>Superstar</td><td class=yr>2021</td></tr><tr><td class=art>Chley</td><td class=ttl>Unbreak My Heart</td><td class=yr><span class=na>&mdash;</span></td></tr><tr class=mq><td class=art>CIZA</td><td class=ttl>Voodoo</td><td class=yr><span class=na>&mdash;</span></td></tr><tr class=mq><td class=art>CIZA</td><td class=ttl>Free Me</td><td class=yr><span class=na>&mdash;</span></td></tr><tr class=mq><td class=art>CIZA, Mario</td><td class=ttl>Shortey</td><td class=yr><span class=na>&mdash;</span></td></tr><tr class=mq><td class=art>DJ Maphorisa, CIZA</td><td class=ttl>Oya Dance</td><td class=yr><span class=na>&mdash;</span></td></tr><tr><td class=art>DJ Ndiyo</td><td class=ttl>Ndiyo</td><td class=yr><span class=na>&mdash;</span></td></tr><tr><td class=art>DJ Spinall</td><td class=ttl>Living</td><td class=yr><span class=na>&mdash;</span></td></tr><tr class=mq><td class=art>Elaine</td><td class=ttl>La Vida Loca</td><td class=yr><span class=na>&mdash;</span></td></tr><tr><td class=art>Malachi</td><td class=ttl>Like That</td><td class=yr><span class=na>&mdash;</span></td></tr><tr><td class=art>Marioo</td><td class=ttl>Dear Ex</td><td class=yr><span class=na>&mdash;</span></td></tr><tr class=mq><td class=art>Marioo, TYLA</td><td class=ttl>Amawele</td><td class=yr><span class=na>&mdash;</span></td></tr><tr><td class=art>Skyla Tyla</td><td class=ttl>2AM In Jozi</td><td class=yr><span class=na>&mdash;</span></td></tr><tr class=mq><td class=art>TxC</td><td class=ttl>Glory</td><td class=yr><span class=na>&mdash;</span></td></tr></tbody>
+      <thead><tr><th>Artist</th><th>Title</th><th class=yr>Year</th><th class=str>Streams</th></tr></thead>
+      <tbody><tr class=mq><td class=art>CIZA</td><td class=ttl>Ivule</td><td class="yr">2026</td><td class=str><span class=na title="not measured in our system — this is not zero plays">&mdash;<span class=lbl> not measured</span></span></td></tr><tr class=mq><td class=art>Omah Lay</td><td class=ttl>Water Spirit</td><td class="yr">2026</td><td class=str><span class=na title="not measured in our system — this is not zero plays">&mdash;<span class=lbl> not measured</span></span></td></tr><tr class=mq><td class=art>CIZA</td><td class=ttl>Abantu</td><td class="yr">2025</td><td class=str><span class=na title="not measured in our system — this is not zero plays">&mdash;<span class=lbl> not measured</span></span></td></tr><tr class=mq><td class=art>Keinemusik, Uncle Waffles</td><td class=ttl>Tanzania (Rampa Keinemusik Remix)</td><td class="yr">2024</td><td class=str><span title="5,096,518 streams, measured 14 September 2026">5.1m<span class=lbl> streams</span></span></td></tr><tr><td class=art>Tony Duardo</td><td class=ttl>Young People Must Be Fine<span class=own>his own release</span></td><td class="yr">2024</td><td class=str><span class=na title="not measured in our system — this is not zero plays">&mdash;<span class=lbl> not measured</span></span></td></tr><tr><td class=art>Tshepi, Seekay</td><td class=ttl>Location</td><td class="yr">2024</td><td class=str><span title="528,000 streams, measured 14 September 2026">528.0k<span class=lbl> streams</span></span></td></tr><tr class=mq><td class=art>TxC</td><td class=ttl>Yebo</td><td class="yr">2024</td><td class=str><span title="20,187,126 streams, measured 14 September 2026">20.2m<span class=lbl> streams</span></span></td></tr><tr class=mq><td class=art>TxC</td><td class=ttl>Turn Off The Lights</td><td class="yr">2024</td><td class=str><span title="14,260,606 streams, measured 14 September 2026">14.3m<span class=lbl> streams</span></span></td></tr><tr class=mq><td class=art>TxC, LeeMckrazy</td><td class=ttl>Thula Nana</td><td class="yr">2024</td><td class=str><span title="414,397 streams, measured 14 September 2026">414.4k<span class=lbl> streams</span></span></td></tr><tr class=mq><td class=art>TYLA</td><td class=ttl>Shake Ah</td><td class="yr">2024</td><td class=str><span title="15,196,362 streams, measured 14 September 2026">15.2m<span class=lbl> streams</span></span></td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Morrocco</td><td class="yr">2024</td><td class=str><span title="313,371 streams, measured 14 September 2026">313.4k<span class=lbl> streams</span></span></td></tr><tr class=mq><td class=art>Adekunle Gold</td><td class=ttl>Chasing Peace Of Mind</td><td class="yr">2023</td><td class=str><span class=na title="not measured in our system — this is not zero plays">&mdash;<span class=lbl> not measured</span></span></td></tr><tr class=mq><td class=art>CIZA, DJ Maphorisa</td><td class=ttl>Bank Notification</td><td class="yr">2023</td><td class=str><span class=na title="not measured in our system — this is not zero plays">&mdash;<span class=lbl> not measured</span></span></td></tr><tr class=mq><td class=art>Davido</td><td class=ttl>FEEL</td><td class="yr">2023</td><td class=str><span title="113,600,000 streams, measured 14 September 2026">113.6m<span class=lbl> streams</span></span></td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Echoes</td><td class="yr">2023</td><td class=str><span title="2,764,824 streams, measured 14 September 2026">2.8m<span class=lbl> streams</span></span></td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Uwe Lona</td><td class="yr">2023</td><td class=str><span title="2,313,081 streams, measured 14 September 2026">2.3m<span class=lbl> streams</span></span></td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Babie</td><td class="yr">2023</td><td class=str><span title="625,321 streams, measured 14 September 2026">625.3k<span class=lbl> streams</span></span></td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Angry Birds</td><td class="yr">2023</td><td class=str><span title="1,147,364 streams, measured 14 September 2026">1.1m<span class=lbl> streams</span></span></td></tr><tr class=mq><td class=art>CIZA</td><td class=ttl>Ola Mama</td><td class="yr">2022</td><td class=str><span class=na title="not measured in our system — this is not zero plays">&mdash;<span class=lbl> not measured</span></span></td></tr><tr><td class=art>Jux, Marioo</td><td class=ttl>Nice (Kiss)</td><td class="yr">2022</td><td class=str><span title="3,303,597 streams, measured 14 September 2026">3.3m<span class=lbl> streams</span></span></td></tr><tr><td class=art>Seekay</td><td class=ttl>Harare</td><td class="yr">2022</td><td class=str><span title="108,461 streams, measured 14 September 2026">108.5k<span class=lbl> streams</span></span></td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Tanzania</td><td class="yr">2022</td><td class=str><span title="21,117,374 streams, measured 14 September 2026">21.1m<span class=lbl> streams</span></span></td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Yahyupiyah</td><td class="yr">2022</td><td class=str><span title="31,800,633 streams, measured 14 September 2026">31.8m<span class=lbl> streams</span></span></td></tr><tr class=mq><td class=art>Uncle Waffles</td><td class=ttl>Love I Need</td><td class="yr">2022</td><td class=str><span title="866,134 streams, measured 14 September 2026">866.1k<span class=lbl> streams</span></span></td></tr><tr><td class=art>Gazza</td><td class=ttl>Superstar</td><td class="yr">2021</td><td class=str><span class=na title="not measured in our system — this is not zero plays">&mdash;<span class=lbl> not measured</span></span></td></tr><tr><td class=art>Chley</td><td class=ttl>Unbreak My Heart</td><td class="yr none"><span class=na>&mdash;</span></td><td class=str><span class=na title="not measured in our system — this is not zero plays">&mdash;<span class=lbl> not measured</span></span></td></tr><tr class=mq><td class=art>CIZA</td><td class=ttl>Voodoo</td><td class="yr none"><span class=na>&mdash;</span></td><td class=str><span class=na title="not measured in our system — this is not zero plays">&mdash;<span class=lbl> not measured</span></span></td></tr><tr class=mq><td class=art>CIZA</td><td class=ttl>Free Me</td><td class="yr none"><span class=na>&mdash;</span></td><td class=str><span class=na title="not measured in our system — this is not zero plays">&mdash;<span class=lbl> not measured</span></span></td></tr><tr class=mq><td class=art>CIZA, Mario</td><td class=ttl>Shortey</td><td class="yr none"><span class=na>&mdash;</span></td><td class=str><span class=na title="not measured in our system — this is not zero plays">&mdash;<span class=lbl> not measured</span></span></td></tr><tr class=mq><td class=art>DJ Maphorisa, CIZA</td><td class=ttl>Oya Dance</td><td class="yr none"><span class=na>&mdash;</span></td><td class=str><span class=na title="not measured in our system — this is not zero plays">&mdash;<span class=lbl> not measured</span></span></td></tr><tr><td class=art>DJ Ndiyo</td><td class=ttl>Ndiyo</td><td class="yr none"><span class=na>&mdash;</span></td><td class=str><span class=na title="not measured in our system — this is not zero plays">&mdash;<span class=lbl> not measured</span></span></td></tr><tr><td class=art>DJ Spinall</td><td class=ttl>Living</td><td class="yr none"><span class=na>&mdash;</span></td><td class=str><span class=na title="not measured in our system — this is not zero plays">&mdash;<span class=lbl> not measured</span></span></td></tr><tr class=mq><td class=art>Elaine</td><td class=ttl>La Vida Loca</td><td class="yr none"><span class=na>&mdash;</span></td><td class=str><span class=na title="not measured in our system — this is not zero plays">&mdash;<span class=lbl> not measured</span></span></td></tr><tr><td class=art>Malachi</td><td class=ttl>Like That</td><td class="yr none"><span class=na>&mdash;</span></td><td class=str><span class=na title="not measured in our system — this is not zero plays">&mdash;<span class=lbl> not measured</span></span></td></tr><tr><td class=art>Marioo</td><td class=ttl>Dear Ex</td><td class="yr none"><span class=na>&mdash;</span></td><td class=str><span class=na title="not measured in our system — this is not zero plays">&mdash;<span class=lbl> not measured</span></span></td></tr><tr class=mq><td class=art>Marioo, TYLA</td><td class=ttl>Amawele</td><td class="yr none"><span class=na>&mdash;</span></td><td class=str><span class=na title="not measured in our system — this is not zero plays">&mdash;<span class=lbl> not measured</span></span></td></tr><tr><td class=art>Skyla Tyla</td><td class=ttl>2AM In Jozi</td><td class="yr none"><span class=na>&mdash;</span></td><td class=str><span class=na title="not measured in our system — this is not zero plays">&mdash;<span class=lbl> not measured</span></span></td></tr><tr class=mq><td class=art>TxC</td><td class=ttl>Glory</td><td class="yr none"><span class=na>&mdash;</span></td><td class=str><span title="242,634 streams, measured 14 September 2026">242.6k<span class=lbl> streams</span></span></td></tr></tbody>
     </table>
   </div>
+  <p class=legend><b>An em dash in the streams column means the record is not measured in our
+  system. It does not mean zero plays.</b> 18 of these 38 records carry a
+  measured figure; the other 20 are simply not counted here, and we make no claim
+  about how they performed. The figures shown were <b>measured 14 September 2026</b> and are rounded
+  &mdash; hover any figure for the exact count.</p>
 
   <div class=note>
     <p><strong>What a credit means here.</strong> These are publishing credits &mdash; the writing
     and the production behind the record. They are not artist releases and we make no claim on the
     recordings. The one exception is <strong>&ldquo;Young People Must Be Fine&rdquo; (2024)</strong>,
     which is Tony Duardo&rsquo;s own release.</p>
-    <p class=small>No streaming, chart or sales figures are published on this page. The catalogue
-    holds the credit and the publishing split; anything beyond that we would have to measure before
-    we would put a number next to it.</p>
+    <p class=small>Stream figures come from our own catalogue record as at 14 September 2026 and cover
+    only the 18 records we measure. We publish no chart positions, awards or sales
+    figures, because we do not hold them.</p>
   </div>
 
   <p class=eyebrow>Work with the team</p>
